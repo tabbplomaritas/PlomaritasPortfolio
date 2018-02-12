@@ -1,0 +1,43 @@
+.flex-container {
+    display: flex;
+    // padding: 0;
+    // margin: 0;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.flex-item {
+    padding: 0px;
+    /*height: 400px;*/
+    width: auto;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#aboutHeader {
+    display: block;
+}
+
+.about {
+    .&__sectionHeader {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 4em;
+        color: rgba($color-primary, 0.7);
+        display: block;
+    }
+    
+    .& img {
+        height: 400px;
+        width: auto;
+        box-shadow: 0 .5rem 1rem rgba($color-grey-dark,.2);
+    }
+    
+    .& p {
+        font-size: 1.2em;
+        border-radius: 3%;
+    }
+}
