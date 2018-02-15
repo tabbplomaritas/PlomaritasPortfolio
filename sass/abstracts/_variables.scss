@@ -1,10 +1,14 @@
-$color-primary: #FF0080;
-$color-secondary: #FF8C00;
-$color-tertiary: #40E0D0;
-
+//COLORS
+$color-primary: #ff0080;
+$color-secondary: #ff8c00;
+$color-tertiary: #40e0d0;
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
-
-$color-primary-faded: #FA5677;
-$color-tertiary-faded: #A1CDA8;
+$color-primary-faded: #fa5677;
+$color-tertiary-faded: #a1cda8;
+//GRID
+$grid-width: 114rem;
+$gutter-width: 8rem;
+$gutter-horizontal: 4rem;
+$gutter-vertical: 2rem;
