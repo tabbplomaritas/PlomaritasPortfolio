@@ -1,43 +1,110 @@
-.flex-container {
+.flex-lists {
     display: flex;
-    // padding: 0;
-    // margin: 0;
-    list-style: none;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex-flow: row wrap;
 }
 
-.flex-item {
-    padding: 0px;
-    /*height: 400px;*/
-    width: auto;
-    margin: 10px auto;
-    text-align: center;
-    justify-content: center;
+.profilePic {
+    object-fit: contain;
+    box-shadow: -5px 10px 19px -5px rgba(176,173,176,1);
+    width: 25rem;
+    border-radius: 25px;
+    max-width: 30rem;
+    align-self: center;
+    margin: 1.5rem;
+    margin-bottom: 7rem;
+  }
+.mainContent__about-list {
+    background-color: $color-white;
+    box-shadow: -5px 10px 19px -5px rgba(176,173,176,1);
+    border-radius: 25px;
+    color: $color-primary;
+    margin: 1.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    h3 {
+        margin-left: 1rem;
+    }
+
+    li {
+        position: relative;
+        padding: 1rem 1rem;
+        list-style-position:inside;
+        cursor: pointer;
+    }
+}
+.mainContent__about-list:first-of-type {
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-delay: .1s;
+    animation-timing-function: ease-in;
 }
 
-#aboutHeader {
-    display: block;
+.mainContent__about-list:nth-of-type(2) {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
 }
 
-.about {
-    .&__sectionHeader {
-        margin-top: 25px;
-        text-align: center;
-        font-size: 4em;
-        color: rgba($color-primary, 0.7);
-        display: block;
-    }
-    
-    .& img {
-        height: 400px;
-        width: auto;
-        box-shadow: 0 .5rem 1rem rgba($color-grey-dark,.2);
-    }
-    
-    .& p {
-        font-size: 1.2em;
-        border-radius: 3%;
-    }
+
+.about-pic1 {
+    background-image: url(../images/deadlift.jpeg);
+@include aboutPicHidden(200px, 300px);
 }
+
+.item1:hover > .about-pic1 {
+    @include aboutPicVisible;
+}
+
+.about-pic2 {
+    @include aboutPicHidden(200px, 200px);
+    background-image: url(../images/lilymommy.jpg);
+}
+
+.item2:hover > .about-pic2 {
+    @include aboutPicVisible;
+}
+
+.about-pic3 {
+    @include aboutPicHidden(200px, 300px);
+    background-image: url(../images/tabbphotos.jpg);
+}
+
+.item3:hover > .about-pic3 {
+    @include aboutPicVisible;
+}
+
+.about-pic4 {
+    @include aboutPicHidden(200px, 300px);
+    background-image: url(../images/tabbphotos.jpg);
+}
+
+.item4:hover > .about-pic4 {
+    @include aboutPicVisible;
+}
+
+.about-pic5 {
+    @include aboutPicHidden(200px, 300px);
+    background-image: url(../images/tabbphotos.jpg);
+}
+
+.item5:hover > .about-pic5 {
+    @include aboutPicVisible;
+}
+
+@media screen and (min-width: 768px)
+ and (orientation: landscape) {
+     .flex-lists {
+         display: flex;
+         flex-direction: row;
+     }
+
+     .mainContent__about-list {
+        flex-flow: row wrap;
+        height: 30%;
+    }
+ }

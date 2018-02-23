@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="icon" href="images/lily.png">
+    <title>Contact | Tabbatha Plomaritas</title>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">
+                        <span class="first-name">Tabbatha</span>
+                    <span class="last-name">Plomaritas</span>
+                    </span>
+                    <span class="heading-primary--sub">Photographer & Web Developer</span>
+                </h1>
+            </div>
+        </header>
+
+        <nav>
+            <div class="links">
+                <a href="index.html" class="btn btn--white btn--animated">Home</a>
+                <a href="about.html" class="btn btn--white btn--animated">About</a>
+                <a href="contact.html" class="btn btn--white btn--animated">Contact</a>
+            </div>
+        </nav>
+
+        <section class="mainContent">
+            <h2 class="mainContent__header">Contact</h2>
+            <form method="POST" class="contact-form"
+            action="#">
+                <div class="contact-form__field">
+                    <label for="name">Name: </label>
+                    <input id="name" name="name" placeholder="Your Name" required autofocus />
+                </div>
+
+                <div class="contact-form__field">
+                    <label for="email">Your Email Address:</label>
+                    <input id="email" name="email" type="email"
+                    required placeholder="your.name@email.com"/>
+                </div>
+
+                <div class="contact-form__field">
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message" rows="10"
+                    placeholder="Tell us what's on your mind..."></textarea>
+                </div>
+
+                <button>
+                <i class="fa fa-paper-plane fa-2x"></i> Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+            <a href="#" class="btn-to-top">Back to top  <i class="fas fa-arrow-alt-circle-up"></i></a>
+            <p>
+            All images and designs © 2018 Tabbatha Plomaritas
+            </p>
+
+
+    </footer>
+</body>
+
+</html>

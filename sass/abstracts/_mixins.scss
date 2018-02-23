@@ -1,0 +1,29 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin aboutPicHidden($height, $width) {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    flex-basis: auto;
+         border-radius: 25px;
+         box-shadow: -5px 10px 19px -5px rgba(176,173,176,1);
+position: absolute;
+top: 5rem;
+right: -4.6rem;
+visibility: hidden;
+}
+
+@mixin aboutPicVisible {
+    visibility:visible;
+    transition-duration: 2s;
+    animation-name: fadeIn;
+             animation-duration: 1.5s;
+             animation-timing-function: ease-in-out;
+             z-index: 3;
+}
