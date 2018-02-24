@@ -166,7 +166,8 @@ body {
   text-decoration: none;
   padding: 10px 10px;
   font-size: 1.4rem;
-  clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%); }
+  clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
+  -webkit-clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%); }
 
 .btn-to-top:hover {
   color: #fff; }
