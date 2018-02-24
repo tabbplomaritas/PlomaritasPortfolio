@@ -374,7 +374,8 @@ footer {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 47vh); }
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 47vh);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 47vh); }
   .header__text-box {
     position: absolute;
     top: 40%;
