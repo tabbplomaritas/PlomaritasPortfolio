@@ -4,6 +4,7 @@ main {
     background-color: $color-light-grey;
     padding-bottom: 20px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
     animation-name: fadeIn;
     animation-duration: .5s;
     animation-timing-function: ease-in;
@@ -21,7 +22,6 @@ nav {
 .links {
     display: flex;
     flex-direction: column;
-
     a {
         width: 12rem;
         height: 1.7rem;
@@ -33,7 +33,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
     margin: 5rem 1rem;
     padding: 10px 10px;
     align-self: center;
@@ -52,16 +52,16 @@ nav {
     }
 
     &__text {
-        background-color: $color-white;
+    background-color: $color-white;
     box-shadow: -5px 10px 19px -5px rgba(176,173,176,.6);
     border-radius: 25px;
     color: $color-grey-dark;
     margin: 1.5rem;
     padding: 1.5rem;
-     font-size: 1.5rem;
-     font-weight: 300;
-     align-content: center;
-     text-indent: 5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    align-content: center;
+    text-indent: 5rem;
      }
 
         p {
@@ -85,12 +85,12 @@ nav {
      align-items: center;
      order: 3;
      padding-bottom: 100px;
-     img {
-         height: 90%;
-         width: 90%;
-         border-radius: 25px;
-         box-shadow: -5px 10px 19px -5px rgba(176,173,176,1);
-        margin: 10px 5px;
+         img {
+            height: 90%;
+            width: 90%;
+            border-radius: 25px;
+            box-shadow: -5px 10px 19px -5px rgba(176,173,176,1);
+            margin: 10px 5px;
 
         &:hover {
             transform: translateY(-2px);
@@ -155,23 +155,23 @@ footer {
          flex-direction: row;
          margin-right: 10px;
          a {
-             margin-right: 1.5rem;
+            margin-right: 1.5rem;
          }
      }
      .header {
-         order: 2;
+        order: 2;
      }
 
      .mainContent {
-         order: 3;
+        order: 3;
      }
 
      .images {
-         order: 4;
-     flex-direction: row;
-        img {
-         height: 30%;
-         width: 30%;
+        order: 4;
+        flex-direction: row;
+            img {
+            height: 30%;
+            width: 30%;
         }
     }
     footer {

@@ -54,7 +54,7 @@ body {
   font-weight: 400;
   line-height: 1.7rem;
   color: #777;
-  padding: 3rem;
+  padding: 1rem;
   max-width: 1270px; }
 
 .heading-primary {
@@ -94,6 +94,8 @@ body {
     animation-timing-function: ease-in; }
 
 @media screen and (min-width: 768px) {
+  body {
+    padding: 3rem; }
   .heading-primary {
     color: #fff;
     text-transform: uppercase;
@@ -133,28 +135,12 @@ body {
 
 .btn:active {
   transform: scale(1.1);
-  transform: translateY(-1px);
   z-index: 1;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
   background-color: #fff;
   color: #ff0080; }
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s; }
-
-.btn-white::after {
-  background-color: #fff; }
 
 .btn--animated {
   animation: moveInBottom .5s ease-out .75s;
@@ -209,6 +195,7 @@ main {
   background-color: #eee;
   padding-bottom: 20px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
   animation-name: fadeIn;
   animation-duration: .5s;
   animation-timing-function: ease-in; }
@@ -233,7 +220,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
   margin: 5rem 1rem;
   padding: 10px 10px;
   align-self: center;
@@ -341,34 +328,6 @@ footer {
   footer {
     margin-top: -10%; } }
 
-.row {
-  max-width: 114rem;
-  background-color: #eee;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 3rem; }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .row [class^="col-"] {
-    background-color: #ff0080;
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 4rem; }
-  .row .col-1-of-2 {
-    width: calc((100% - 4rem) /2); }
-  .row .col-1-of-3 {
-    width: calc((100% - 2 * 4rem)/3); }
-  .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 4rem)/3) + 4rem); }
-  .row .col-1-of-4 {
-    width: calc((100% - 3 * 4rem) / 4); }
-  .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 4rem) / 4) + 4rem); }
-  .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
-
 .header {
   height: 65vh;
   background-image: linear-gradient(to left top, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), rgba(64, 224, 208, 0.8)), url(../images/tabbLight.jpg);
@@ -408,7 +367,11 @@ footer {
   margin: 1.5rem;
   padding: 1rem;
   font-size: 1.5rem;
-  font-weight: 300; }
+  font-weight: 300;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .mainContent__about-list h3 {
     margin-left: 1rem; }
   .mainContent__about-list li {
@@ -417,13 +380,13 @@ footer {
     list-style-position: inside;
     cursor: pointer; }
 
-.mainContent__about-list:first-of-type {
+.mainContent__about-list:first-child {
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-delay: .1s;
   animation-timing-function: ease-in; }
 
-.mainContent__about-list:nth-of-type(2) {
+.mainContent__about-list:nth-child(2) {
   animation-name: moveInRight;
   animation-duration: 1s;
   animation-delay: 0s;
@@ -431,15 +394,15 @@ footer {
 
 .about-pic1 {
   background-image: url(../images/deadlift.jpeg);
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   background-size: cover;
   flex-basis: auto;
   border-radius: 25px;
   box-shadow: -5px 10px 19px -5px #b0adb0;
   position: absolute;
-  top: 5rem;
-  right: -4.6rem;
+  top: -25rem;
+  right: 0rem;
   visibility: hidden; }
 
 .item1:hover > .about-pic1 {
@@ -451,15 +414,15 @@ footer {
   z-index: 3; }
 
 .about-pic2 {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   background-size: cover;
   flex-basis: auto;
   border-radius: 25px;
   box-shadow: -5px 10px 19px -5px #b0adb0;
   position: absolute;
-  top: 5rem;
-  right: -4.6rem;
+  top: -25rem;
+  right: 0rem;
   visibility: hidden;
   background-image: url(../images/lilymommy.jpg); }
 
@@ -473,16 +436,16 @@ footer {
 
 .about-pic3 {
   height: 200px;
-  width: 200px;
+  width: 300px;
   background-size: cover;
   flex-basis: auto;
   border-radius: 25px;
   box-shadow: -5px 10px 19px -5px #b0adb0;
   position: absolute;
-  top: 5rem;
-  right: -4.6rem;
+  top: -25rem;
+  right: 0rem;
   visibility: hidden;
-  background-image: url(../images/tabbphotos.jpg); }
+  background-image: url(../images/tabbCamera.jpg); }
 
 .item3:hover > .about-pic3 {
   visibility: visible;
@@ -494,16 +457,16 @@ footer {
 
 .about-pic4 {
   height: 200px;
-  width: 200px;
+  width: 300px;
   background-size: cover;
   flex-basis: auto;
   border-radius: 25px;
   box-shadow: -5px 10px 19px -5px #b0adb0;
   position: absolute;
-  top: 5rem;
-  right: -4.6rem;
+  top: -25rem;
+  right: 0rem;
   visibility: hidden;
-  background-image: url(../images/tabbphotos.jpg); }
+  background-image: url(../images/stanley.jpg); }
 
 .item4:hover > .about-pic4 {
   visibility: visible;
@@ -515,16 +478,16 @@ footer {
 
 .about-pic5 {
   height: 200px;
-  width: 200px;
+  width: 300px;
   background-size: cover;
   flex-basis: auto;
   border-radius: 25px;
   box-shadow: -5px 10px 19px -5px #b0adb0;
   position: absolute;
-  top: 5rem;
-  right: -4.6rem;
+  top: -25rem;
+  right: 0rem;
   visibility: hidden;
-  background-image: url(../images/tabbphotos.jpg); }
+  background-image: url(../images/cocktail.jpg); }
 
 .item5:hover > .about-pic5 {
   visibility: visible;
@@ -539,14 +502,13 @@ footer {
     display: flex;
     flex-direction: row; }
   .mainContent__about-list {
-    flex-flow: row wrap;
-    height: 30%; } }
+    height: 28.7rem;
+    width: 40%; } }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 0 auto;
   padding: 1rem;
   background-color: #fff;
   border-radius: 10px;

@@ -24,6 +24,11 @@
     padding: 1rem;
     font-size: 1.5rem;
     font-weight: 300;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 
     h3 {
         margin-left: 1rem;
@@ -36,14 +41,14 @@
         cursor: pointer;
     }
 }
-.mainContent__about-list:first-of-type {
+.mainContent__about-list:first-child {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-delay: .1s;
     animation-timing-function: ease-in;
 }
 
-.mainContent__about-list:nth-of-type(2) {
+.mainContent__about-list:nth-child(2) {
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-delay: 0s;
@@ -53,7 +58,7 @@
 
 .about-pic1 {
     background-image: url(../images/deadlift.jpeg);
-@include aboutPicHidden(200px, 300px);
+@include aboutPicHidden(250px, 250px);
 }
 
 .item1:hover > .about-pic1 {
@@ -61,7 +66,7 @@
 }
 
 .about-pic2 {
-    @include aboutPicHidden(200px, 200px);
+    @include aboutPicHidden(250px, 250px);
     background-image: url(../images/lilymommy.jpg);
 }
 
@@ -71,7 +76,7 @@
 
 .about-pic3 {
     @include aboutPicHidden(200px, 300px);
-    background-image: url(../images/tabbphotos.jpg);
+    background-image: url(../images/tabbCamera.jpg);
 }
 
 .item3:hover > .about-pic3 {
@@ -80,7 +85,7 @@
 
 .about-pic4 {
     @include aboutPicHidden(200px, 300px);
-    background-image: url(../images/tabbphotos.jpg);
+    background-image: url(../images/stanley.jpg);
 }
 
 .item4:hover > .about-pic4 {
@@ -89,7 +94,7 @@
 
 .about-pic5 {
     @include aboutPicHidden(200px, 300px);
-    background-image: url(../images/tabbphotos.jpg);
+    background-image: url(../images/cocktail.jpg);
 }
 
 .item5:hover > .about-pic5 {
@@ -104,7 +109,7 @@
      }
 
      .mainContent__about-list {
-        flex-flow: row wrap;
-        height: 30%;
+        height: 28.7rem;
+        width: 40%;
     }
  }

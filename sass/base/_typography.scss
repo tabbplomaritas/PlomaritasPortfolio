@@ -8,7 +8,7 @@
      font-weight: 400;
      line-height: 1.7rem;
      color: $color-grey-dark;
-     padding: 3rem;
+     padding: 1rem;
      max-width: 1270px;
  }
 
@@ -54,6 +54,10 @@
  }
 
  @media screen and (min-width: 768px) {
+
+    body {
+        padding: 3rem;
+    }
      .heading-primary {
          color: $color-white;
          text-transform: uppercase;

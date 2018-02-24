@@ -6,7 +6,6 @@
         text-decoration: none;
         padding: 10px 10px;
         display: inline-block;
-        // transition: all .2s;
         position: relative;
         font-size: 1.4rem;
         transform: rotate(21.5deg);
@@ -20,7 +19,6 @@
     }
     &:active {
         transform: scale(1.1);
-        transform:translateY(-1px);
         z-index: 1;
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
@@ -28,21 +26,7 @@
         background-color: $color-white;
         color: $color-primary;
     }
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
-    }
-    &-white::after {
-        background-color: $color-white;
-    }
+
     &--animated {
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
@@ -52,9 +36,8 @@
 .btn-to-top {
     &:link,
     &:visited {
-        // transform: rotate(9.5deg);
         color: $color-primary;
-         text-transform: uppercase;
+        text-transform: uppercase;
         text-align: center;
         text-decoration: none;
         padding: 10px 10px;
@@ -110,9 +93,9 @@
         &:hover {
             transform: rotate(12.5deg);
             }
-            &:active {
-                transform: scale(1.1);
-                box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        &:active {
+          transform: scale(1.1);
+           box-shadow: 0 .5rem 1rem rgba($color-black,.2);
             }
         }
     }
