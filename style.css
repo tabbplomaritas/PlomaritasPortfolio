@@ -62,7 +62,7 @@ html {
 
 @font-face {
     font-family: "beyond";
-    src: url("../fonts/beyond_the_mountains.otf");
+    src: url("fonts/beyond_the_mountains.otf");
 }
 
 body {
@@ -218,7 +218,7 @@ nav {
 .header {
     height: 65vh;
     background-image: linear-gradient(to left top, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), rgba(64, 224, 208, 0.8)), url(images/tabbLight.jpg);
-    background-image: -webkit-linear-gradient(to left top, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), rgba(64, 224, 208, 0.8)), url(images/tabbLight.jpg);
+    /* background-image: -webkit-linear-gradient(to left top, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), rgba(64, 224, 208, 0.8)), url(images/tabbLight.jpg); */
     background-size: cover;
     background-position: top;
     position: relative;
@@ -391,7 +391,7 @@ footer p {
 }
 
 .about-pic1 {
-    background-image: url(../images/deadlift.jpeg);
+    background-image: url(images/deadlift.jpeg);
     transition: .3s all;
     height: 250px;
     width: 250px;
@@ -423,7 +423,7 @@ footer p {
     top: -25rem;
     right: 0rem;
     visibility: hidden;
-    background-image: url(../images/lilymommy.jpg);
+    background-image: url(images/lilymommy.jpg);
     transition: .3s all;
 }
 
@@ -446,7 +446,7 @@ footer p {
     top: -25rem;
     right: 0rem;
     visibility: hidden;
-    background-image: url(../images/tabbCamera.jpg);
+    background-image: url(images/tabbCamera.jpg);
     transition: .3s all;
 }
 
@@ -469,7 +469,7 @@ footer p {
     top: -25rem;
     right: 0rem;
     visibility: hidden;
-    background-image: url(../images/stanley.jpg);
+    background-image: url(images/stanley.jpg);
     transition: .3s all;
 }
 
@@ -492,7 +492,7 @@ footer p {
     top: -25rem;
     right: 0rem;
     visibility: hidden;
-    background-image: url(../images/cocktail.jpg);
+    background-image: url(images/cocktail.jpg);
     transition: .3s all;
 }
 
