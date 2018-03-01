@@ -91,6 +91,7 @@ nav {
             text-decoration: none;
             color: $color-primary;
             font-weight: 400;
+            transition: .25s all;
         }
         a:hover {
             color: $color-tertiary-faded;
@@ -113,11 +114,11 @@ nav {
             margin: 10px 5px;
 
         &:hover {
-            transform: translateY(-2px);
+            transform: translateY(-.5rem);
         }
 
         &:active {
-            transform: translateY(2px);
+            transform: translateY(.25rem);
         }
     }
 }

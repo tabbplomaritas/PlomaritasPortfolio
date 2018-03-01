@@ -125,6 +125,7 @@ body {
   position: relative;
   font-size: 1.4rem;
   transform: rotate(21.5deg);
+  transition: .4s all;
   clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
   -webkit-clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%); }
 
@@ -153,6 +154,7 @@ body {
   text-decoration: none;
   padding: 10px 10px;
   font-size: 1.4rem;
+  transition: .4s all;
   clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
   -webkit-clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%); }
 
@@ -242,7 +244,8 @@ nav {
   .mainContent a {
     text-decoration: none;
     color: #ff0080;
-    font-weight: 400; }
+    font-weight: 400;
+    transition: .25s all; }
   .mainContent a:hover {
     color: #a1cda8; }
 
@@ -261,9 +264,9 @@ nav {
     box-shadow: -5px 10px 19px -5px #b0adb0;
     margin: 10px 5px; }
     .image-grid img:hover {
-      transform: translateY(-2px); }
+      transform: translateY(-0.5rem); }
     .image-grid img:active {
-      transform: translateY(2px); }
+      transform: translateY(0.25rem); }
 
 footer {
   background-color: #eee;
