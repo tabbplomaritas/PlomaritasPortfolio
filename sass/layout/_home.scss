@@ -17,6 +17,7 @@ nav {
     height: 20.8rem;
     margin-top: -17vh;
     list-style: none;
+    transition: .5s all
 }
 
 .nav__links {
@@ -83,19 +84,19 @@ nav {
     text-indent: 5rem;
     }
 
-        p {
-            margin-bottom: 1rem;
-        }
+    p {
+    margin-bottom: 1rem;
+    }
 
-        a {
+    a {
             text-decoration: none;
             color: $color-primary;
             font-weight: 400;
             transition: .25s all;
-        }
-        a:hover {
+    }
+    a:hover {
             color: $color-tertiary-faded;
-        }
+    }
     }
 
 .image-grid {
@@ -119,6 +120,7 @@ nav {
 
         &:active {
             transform: translateY(.25rem);
+            box-shadow: -5px 11px 7px -5px #b0adb0;
         }
     }
 }
