@@ -8,7 +8,7 @@ main {
     animation-name: fadeIn;
     animation-duration: .5s;
     animation-timing-function: ease-in;
- }
+}
 
 nav {
     display: flex;
@@ -17,17 +17,36 @@ nav {
     height: 20.8rem;
     margin-top: -17vh;
     list-style: none;
- }
+}
 
-.links {
+.nav__links {
     display: flex;
     flex-direction: column;
+
     a {
         width: 12rem;
         height: 1.7rem;
         margin-bottom: 1rem;
     }
- }
+}
+
+.header {
+    height: 65vh;
+    background-image: linear-gradient( to left top, rgba($color-primary, 0.8), rgba($color-secondary, 0.8), rgba($color-tertiary, 0.8)), url(../images/tabbLight.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 47vh);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 47vh);
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
 
 .mainContent {
     display: flex;
@@ -62,7 +81,7 @@ nav {
     font-weight: 300;
     align-content: center;
     text-indent: 5rem;
-     }
+    }
 
         p {
             margin-bottom: 1rem;
@@ -78,14 +97,15 @@ nav {
         }
     }
 
- .images {
-     display: flex;
-     flex-flow: column;
-     justify-content: space-around;
-     align-items: center;
-     order: 3;
-     padding-bottom: 100px;
-         img {
+.image-grid {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    order: 3;
+    padding-bottom: 100px;
+    margin: 1rem;
+        img {
             height: 90%;
             width: 90%;
             border-radius: 25px;
@@ -99,8 +119,8 @@ nav {
         &:active {
             transform: translateY(2px);
         }
-     }
- }
+    }
+}
 
 footer {
     background-color: $color-light-grey;
@@ -113,69 +133,9 @@ footer {
     height: 25rem;
     margin-top: -30%;
 
-        p {
-            text-align: center;
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 300;
     }
-
- @media screen and (min-width: 512px) {
-    nav {
-        margin-top: -17.5vh;
-    }
-
-   footer {
-       margin-top: -25%;
-   }
-
-   .heading-primary--main {
-       font-size: 5rem;
-       line-height: 5rem;
-       .first-name {
-        letter-spacing: 1.5rem;
-    }
-    .last-name {
-        letter-spacing: .75rem;
-    }
-   }
-}
- @media screen and (min-width: 768px)
- and (orientation: landscape) {
-     nav {
-         order: 1;
-         flex-direction: row;
-         justify-content: flex-end;
-         height: 100%;
-         margin-top: 30px;
-         list-style: none;
-         margin-top: 1rem;
-     }
-     .links {
-         flex-direction: row;
-         margin-right: 10px;
-         a {
-            margin-right: 1.5rem;
-         }
-     }
-     .header {
-        order: 2;
-     }
-
-     .mainContent {
-        order: 3;
-     }
-
-     .images {
-        order: 4;
-        flex-direction: row;
-            img {
-            height: 30%;
-            width: 30%;
-        }
-    }
-    footer {
-        margin-top: -10%;
-    }
-
 }

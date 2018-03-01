@@ -67,7 +67,7 @@ body {
   flex-direction: column;
   justify-content: center; }
   .heading-primary--main {
-    opacity: .8;
+    opacity: .7;
     display: block;
     font-size: 3rem;
     font-weight: 900;
@@ -84,7 +84,7 @@ body {
     margin-top: 10px;
     text-transform: none;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: .75rem;
     line-height: 2rem;
     opacity: .8;
@@ -165,30 +165,6 @@ body {
   z-index: 1;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-@media screen and (min-width: 512px) {
-  .btn:link, .btn:visited {
-    transform: rotate(16.5deg); }
-  .btn:hover {
-    transform: rotate(0deg); } }
-
-@media screen and (min-width: 650px) {
-  .btn:link, .btn:visited {
-    transform: rotate(12.5deg); }
-  .btn:hover {
-    transform: rotate(0deg); }
-  .btn:active {
-    transform: scale(1.1);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); } }
-
-@media screen and (min-width: 768px) {
-  .btn:link, .btn:visited {
-    transform: rotate(0deg); }
-  .btn:hover {
-    transform: rotate(12.5deg); }
-  .btn:active {
-    transform: scale(1.1);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); } }
-
 main {
   display: flex;
   flex-direction: column;
@@ -208,13 +184,28 @@ nav {
   margin-top: -17vh;
   list-style: none; }
 
-.links {
+.nav__links {
   display: flex;
   flex-direction: column; }
-  .links a {
+  .nav__links a {
     width: 12rem;
     height: 1.7rem;
     margin-bottom: 1rem; }
+
+.header {
+  height: 65vh;
+  background-image: linear-gradient(to left top, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), rgba(64, 224, 208, 0.8)), url(../images/tabbLight.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 47vh);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 47vh); }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .mainContent {
   display: flex;
@@ -255,22 +246,23 @@ nav {
   .mainContent a:hover {
     color: #a1cda8; }
 
-.images {
+.image-grid {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
   order: 3;
-  padding-bottom: 100px; }
-  .images img {
+  padding-bottom: 100px;
+  margin: 1rem; }
+  .image-grid img {
     height: 90%;
     width: 90%;
     border-radius: 25px;
     box-shadow: -5px 10px 19px -5px #b0adb0;
     margin: 10px 5px; }
-    .images img:hover {
+    .image-grid img:hover {
       transform: translateY(-2px); }
-    .images img:active {
+    .image-grid img:active {
       transform: translateY(2px); }
 
 footer {
@@ -287,61 +279,6 @@ footer {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 300; }
-
-@media screen and (min-width: 512px) {
-  nav {
-    margin-top: -17.5vh; }
-  footer {
-    margin-top: -25%; }
-  .heading-primary--main {
-    font-size: 5rem;
-    line-height: 5rem; }
-    .heading-primary--main .first-name {
-      letter-spacing: 1.5rem; }
-    .heading-primary--main .last-name {
-      letter-spacing: .75rem; } }
-
-@media screen and (min-width: 768px) and (orientation: landscape) {
-  nav {
-    order: 1;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 100%;
-    margin-top: 30px;
-    list-style: none;
-    margin-top: 1rem; }
-  .links {
-    flex-direction: row;
-    margin-right: 10px; }
-    .links a {
-      margin-right: 1.5rem; }
-  .header {
-    order: 2; }
-  .mainContent {
-    order: 3; }
-  .images {
-    order: 4;
-    flex-direction: row; }
-    .images img {
-      height: 30%;
-      width: 30%; }
-  footer {
-    margin-top: -10%; } }
-
-.header {
-  height: 65vh;
-  background-image: linear-gradient(to left top, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), rgba(64, 224, 208, 0.8)), url(../images/tabbLight.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 47vh);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 47vh); }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
 
 .flex-lists {
   display: flex;
@@ -394,6 +331,7 @@ footer {
 
 .about-pic1 {
   background-image: url(../images/deadlift.jpeg);
+  transition: .3s all;
   height: 250px;
   width: 250px;
   background-size: cover;
@@ -424,7 +362,8 @@ footer {
   top: -25rem;
   right: 0rem;
   visibility: hidden;
-  background-image: url(../images/lilymommy.jpg); }
+  background-image: url(../images/lilymommy.jpg);
+  transition: .3s all; }
 
 .item2:hover > .about-pic2 {
   visibility: visible;
@@ -445,7 +384,8 @@ footer {
   top: -25rem;
   right: 0rem;
   visibility: hidden;
-  background-image: url(../images/tabbCamera.jpg); }
+  background-image: url(../images/tabbCamera.jpg);
+  transition: .3s all; }
 
 .item3:hover > .about-pic3 {
   visibility: visible;
@@ -466,7 +406,8 @@ footer {
   top: -25rem;
   right: 0rem;
   visibility: hidden;
-  background-image: url(../images/stanley.jpg); }
+  background-image: url(../images/stanley.jpg);
+  transition: .3s all; }
 
 .item4:hover > .about-pic4 {
   visibility: visible;
@@ -487,7 +428,8 @@ footer {
   top: -25rem;
   right: 0rem;
   visibility: hidden;
-  background-image: url(../images/cocktail.jpg); }
+  background-image: url(../images/cocktail.jpg);
+  transition: .3s all; }
 
 .item5:hover > .about-pic5 {
   visibility: visible;
@@ -496,14 +438,6 @@ footer {
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   z-index: 3; }
-
-@media screen and (min-width: 768px) and (orientation: landscape) {
-  .flex-lists {
-    display: flex;
-    flex-direction: row; }
-  .mainContent__about-list {
-    height: 28.7rem;
-    width: 40%; } }
 
 .contact-form {
   display: flex;
@@ -544,3 +478,76 @@ footer {
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     .contact-form button:active {
       transform: translateY(3px); }
+
+@media screen and (min-width: 512px) {
+  nav {
+    margin-top: -17.5vh; }
+  footer {
+    margin-top: -25%; }
+  .heading-primary--main {
+    font-size: 5rem;
+    line-height: 5rem; }
+  .btn:link, .btn:visited {
+    transform: rotate(16.5deg); }
+  .btn:hover {
+    transform: rotate(0deg); } }
+
+@media screen and (min-width: 650px) {
+  .btn:link, .btn:visited {
+    transform: rotate(12.5deg); }
+  .btn:hover {
+    transform: rotate(0deg); }
+  .btn:active {
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); } }
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  body {
+    padding: 3rem; }
+  .heading-primary {
+    margin-bottom: 60px; }
+    .heading-primary--main {
+      line-height: 6.2rem;
+      font-size: 6rem; }
+      .heading-primary--main .first-name {
+        letter-spacing: 3.5rem; }
+      .heading-primary--main .last-name {
+        letter-spacing: 2rem; }
+  nav {
+    flex-direction: row;
+    order: 1;
+    justify-content: flex-end;
+    height: 100%;
+    margin-top: 30px;
+    list-style: none;
+    margin-top: 1rem; }
+  .nav__links {
+    flex-direction: row;
+    margin-right: 10px; }
+    .nav__links a {
+      margin-right: 1.5rem; }
+  .btn:link, .btn:visited {
+    transform: rotate(0deg); }
+  .btn:hover {
+    transform: rotate(12.5deg); }
+  .btn:active {
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .header {
+    order: 2; }
+  .mainContent {
+    order: 3; }
+  .image-grid {
+    order: 4;
+    flex-flow: row wrap; }
+    .image-grid img {
+      height: 30%;
+      width: 30%; }
+  footer {
+    margin-top: -10%; }
+  .flex-lists {
+    display: flex;
+    flex-direction: row; }
+  .mainContent__about-list {
+    height: 28.7rem;
+    width: 40%; } }

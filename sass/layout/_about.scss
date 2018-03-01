@@ -14,7 +14,8 @@
     align-self: center;
     margin: 1.5rem;
     margin-bottom: 7rem;
-  }
+}
+
 .mainContent__about-list {
     background-color: $color-white;
     box-shadow: -5px 10px 19px -5px rgba(176,173,176,1);
@@ -28,7 +29,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 
     h3 {
         margin-left: 1rem;
@@ -41,6 +41,7 @@
         cursor: pointer;
     }
 }
+
 .mainContent__about-list:first-child {
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -55,10 +56,10 @@
     animation-timing-function: ease-in;
 }
 
-
 .about-pic1 {
     background-image: url(../images/deadlift.jpeg);
-@include aboutPicHidden(250px, 250px);
+    transition: .3s all;
+    @include aboutPicHidden(250px, 250px);
 }
 
 .item1:hover > .about-pic1 {
@@ -68,6 +69,7 @@
 .about-pic2 {
     @include aboutPicHidden(250px, 250px);
     background-image: url(../images/lilymommy.jpg);
+    transition: .3s all;
 }
 
 .item2:hover > .about-pic2 {
@@ -77,6 +79,7 @@
 .about-pic3 {
     @include aboutPicHidden(200px, 300px);
     background-image: url(../images/tabbCamera.jpg);
+    transition: .3s all;
 }
 
 .item3:hover > .about-pic3 {
@@ -86,6 +89,7 @@
 .about-pic4 {
     @include aboutPicHidden(200px, 300px);
     background-image: url(../images/stanley.jpg);
+    transition: .3s all;
 }
 
 .item4:hover > .about-pic4 {
@@ -95,21 +99,9 @@
 .about-pic5 {
     @include aboutPicHidden(200px, 300px);
     background-image: url(../images/cocktail.jpg);
+    transition: .3s all;
 }
 
 .item5:hover > .about-pic5 {
     @include aboutPicVisible;
 }
-
-@media screen and (min-width: 768px)
- and (orientation: landscape) {
-     .flex-lists {
-         display: flex;
-         flex-direction: row;
-     }
-
-     .mainContent__about-list {
-        height: 28.7rem;
-        width: 40%;
-    }
- }
