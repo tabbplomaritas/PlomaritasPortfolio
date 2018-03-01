@@ -1,0 +1,131 @@
+//Widths between mobile and tablet+desktop to make the heading clip mask and rotating buttons move as the screen size is changed
+
+@media screen and (min-width: 512px) {
+    nav {
+        margin-top: -17.5vh;
+    }
+
+   footer {
+       margin-top: -25%;
+   }
+
+
+   .heading-primary--main {
+       font-size: 5rem;
+       line-height: 5rem;
+   }
+
+   .btn {
+        &:link,
+        &:visited {
+        transform: rotate(16.5deg);
+        }
+        &:hover {
+        transform: rotate(0deg);
+        }
+    }
+}
+//Widths between mobile and tablet+desktop to make the heading clip mask and rotating buttons move as the screen size is changed
+
+@media screen and (min-width: 650px) {
+    .btn {
+        &:link,
+        &:visited {
+            transform: rotate(12.5deg);
+        }
+        &:hover {
+            transform: rotate(0deg);
+        }
+        &:active {
+            transform: scale(1.1);
+            box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        }
+    }
+}
+
+
+// Tablet & Desktop & Landscape view
+ @media screen and (min-width: 768px)
+ and (orientation: landscape) {
+
+    body {
+        padding: 3rem;
+    }
+
+    .heading-primary {
+        margin-bottom: 60px;
+         &--main {
+            line-height: 6.2rem;
+            font-size: 6rem;
+
+            .first-name {
+                letter-spacing: 3.5rem;
+            }
+            .last-name {
+                letter-spacing: 2rem;
+            }
+        }
+    }
+
+    nav {
+        flex-direction: row;
+        order: 1;
+        justify-content: flex-end;
+        height: 100%;
+        margin-top: 30px;
+        list-style: none;
+        margin-top: 1rem;
+    }
+
+    .nav__links {
+        flex-direction: row;
+        margin-right: 10px;
+        a {
+            margin-right: 1.5rem;
+        }
+    }
+
+    .btn {
+        &:link,
+        &:visited {
+            transform: rotate(0deg);
+        }
+        &:hover {
+            transform: rotate(12.5deg);
+        }
+        &:active {
+          transform: scale(1.1);
+           box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        }
+    }
+
+    .header {
+        order: 2;
+    }
+
+    .mainContent {
+        order: 3;
+    }
+
+    .image-grid {
+        order: 4;
+        flex-flow: row wrap;
+            img {
+            height: 30%;
+            width: 30%;
+        }
+    }
+    footer {
+        margin-top: -10%;
+    }
+
+    .flex-lists {
+        display: flex;
+        flex-direction: row;
+   }
+
+   .mainContent__about-list {
+       height: 28.7rem;
+       width: 40%;
+   }
+}

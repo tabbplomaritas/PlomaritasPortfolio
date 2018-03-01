@@ -1,7 +1,7 @@
 {
     "name": "portfolio",
     "version": "1.0.0",
-    "description": "A 2nd landing page for Tabbatha's Web Dev Portfolio",
+    "description": "Portfolio for Tabbatha's Web Development Projects, Assignments, and Experiments",
     "main": "index.js",
     "scripts": {
         "compile:sass": "node-sass sass/main.scss css/style.css -w"
