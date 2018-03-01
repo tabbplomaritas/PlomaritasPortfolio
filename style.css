@@ -62,7 +62,7 @@ html {
 
 @font-face {
     font-family: "beyond";
-    src: url("fonts/beyond_the_mountains.otf");
+    src: url("/fonts/beyond_the_mountains.otf");
 }
 
 body {
