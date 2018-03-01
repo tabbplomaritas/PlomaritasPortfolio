@@ -1,6 +1,6 @@
 @font-face {
     font-family: "beyond";
-    src: url("../fonts/beyond_the_mountains.otf");
+    src: url("fonts/beyond_the_mountains.otf");
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     color: $color-grey-dark;
     padding: 1rem;
     max-width: 1270px;
- }
+}
 
 .heading-primary {
     color: $color-white;
@@ -31,7 +31,6 @@ body {
         animation-delay: .1s;
         animation-timing-function: ease-in;
         transition: .5s all;
-
         .first-name {
             letter-spacing: 1.5rem;
         }
