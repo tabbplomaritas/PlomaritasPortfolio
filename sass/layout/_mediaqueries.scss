@@ -9,10 +9,13 @@
        margin-top: -25%;
    }
 
-
    .heading-primary--main {
        font-size: 5rem;
        line-height: 5rem;
+   }
+
+   .heading-primary--sub {
+       font-size: 1.8rem;
    }
 
    .btn {
@@ -25,6 +28,7 @@
         }
     }
 }
+
 //Widths between mobile and tablet+desktop to make the heading clip mask and rotating buttons move as the screen size is changed
 
 @media screen and (min-width: 650px) {
@@ -45,6 +49,7 @@
 
 
 // Tablet & Desktop & Landscape view
+
  @media screen and (min-width: 768px)
  and (orientation: landscape) {
 
@@ -54,7 +59,8 @@
 
     .heading-primary {
         margin-bottom: 60px;
-         &--main {
+
+        &--main {
             line-height: 6.2rem;
             font-size: 6rem;
 
@@ -62,7 +68,7 @@
                 letter-spacing: 3.5rem;
             }
             .last-name {
-                letter-spacing: 2rem;
+                letter-spacing: 1.9rem;
             }
         }
     }
@@ -94,13 +100,14 @@
             transform: rotate(12.5deg);
         }
         &:active {
-          transform: scale(1.1);
-           box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+            transform: rotate(-12.5deg);
+
         }
     }
 
     .header {
         order: 2;
+        background-position: 50% 19%;
     }
 
     .mainContent {

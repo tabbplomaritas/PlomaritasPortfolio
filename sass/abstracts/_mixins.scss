@@ -10,20 +10,19 @@
     height: $height;
     width: $width;
     background-size: cover;
-    flex-basis: auto;
-         border-radius: 25px;
-         box-shadow: -5px 10px 19px -5px rgba(176,173,176,1);
-position: absolute;
-top: -25rem;
-right: 0rem;
-visibility: hidden;
+    border-radius: 25px;
+    box-shadow: -5px 10px 19px -5px rgba(176,173,176,1);
+    position: absolute;
+    top: -25rem;
+    right: 0rem;
+    visibility: hidden;
 }
 
 @mixin aboutPicVisible {
     visibility:visible;
     transition-duration: 2s;
     animation-name: fadeIn;
-             animation-duration: 1.5s;
-             animation-timing-function: ease-in-out;
-             z-index: 3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    z-index: 3;
 }

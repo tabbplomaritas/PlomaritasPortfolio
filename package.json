@@ -4,7 +4,7 @@
     "description": "Portfolio for Tabbatha's Web Development Projects, Assignments, and Experiments",
     "main": "index.js",
     "scripts": {
-        "compile:sass": "node-sass sass/main.scss css/style.css -w"
+        "compile:sass": "node-sass sass/main.scss style.css -w"
     },
     "author": "",
     "license": "ISC",

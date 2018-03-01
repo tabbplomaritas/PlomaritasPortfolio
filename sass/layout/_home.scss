@@ -33,7 +33,11 @@ nav {
 
 .header {
     height: 65vh;
-    background-image: linear-gradient( to left top, rgba($color-primary, 0.8), rgba($color-secondary, 0.8), rgba($color-tertiary, 0.8)), url(../images/tabbLight.jpg);
+    background-image: linear-gradient( to left top,
+    rgba($color-primary, 0.8),
+    rgba($color-secondary, 0.8),
+    rgba($color-tertiary, 0.8)),
+    url(../images/tabbLight.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -54,7 +58,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 5rem 1rem;
+    margin: 3rem 1rem;
     padding: 10px 10px;
     align-self: center;
     width: 90%;
@@ -72,32 +76,36 @@ nav {
     }
 
     &__text {
-    background-color: $color-white;
-    box-shadow: -5px 10px 19px -5px rgba(176,173,176,.6);
-    border-radius: 25px;
-    color: $color-grey-dark;
-    margin: 1.5rem;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    font-weight: 300;
-    align-content: center;
-    text-indent: 5rem;
+        background-color: $color-white;
+        box-shadow: -5px 10px 19px -5px rgba(176,173,176,.6);
+        border-radius: 25px;
+        color: $color-grey-dark;
+        margin: 1.5rem;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        align-content: center;
+        text-indent: 5rem;
     }
 
     p {
-    margin-bottom: 1rem;
+        // line-height: 1.5rem;
+    }
+
+    p:not(:last-child) {
+        margin-bottom: 1rem;
     }
 
     a {
-            text-decoration: none;
-            color: $color-primary;
-            font-weight: 400;
-            transition: .25s all;
+        text-decoration: none;
+        color: $color-primary;
+        font-weight: 400;
+        transition: .25s all;
     }
     a:hover {
-            color: $color-tertiary-faded;
+        color: $color-tertiary-faded;
     }
-    }
+}
 
 .image-grid {
     display: flex;
@@ -113,14 +121,16 @@ nav {
             border-radius: 25px;
             box-shadow: -5px 10px 19px -5px rgba(176,173,176,1);
             margin: 10px 5px;
+            transition: .25s all ease-in;
 
         &:hover {
-            transform: translateY(-.5rem);
+            transform: translateY(.3rem);
+            box-shadow: -5px 10px 7px -5px #b0adb0;
         }
 
         &:active {
-            transform: translateY(.25rem);
-            box-shadow: -5px 11px 7px -5px #b0adb0;
+            transform: translateY(.6rem);
+            box-shadow: -5px 10px 0px -5px #b0adb0;
         }
     }
 }
@@ -132,7 +142,11 @@ footer {
     justify-content: flex-end;
     align-items: center;
     z-index: -1;
-    background-image: linear-gradient( to bottom right, rgba($color-primary, 0.8), rgba($color-secondary, 0.8), rgba($color-tertiary, 0.8));
+    background-image: linear-gradient(
+        to bottom right,
+        rgba($color-primary, 0.8),
+        rgba($color-secondary, 0.8),
+        rgba($color-tertiary, 0.8));
     height: 25rem;
     margin-top: -30%;
 

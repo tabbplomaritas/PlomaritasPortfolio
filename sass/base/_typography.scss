@@ -1,85 +1,56 @@
- @font-face {
-     font-family: "beyond";
-     src: url("../fonts/beyond_the_mountains.otf");
+@font-face {
+    font-family: "beyond";
+    src: url("../fonts/beyond_the_mountains.otf");
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: $color-grey-dark;
+    padding: 1rem;
+    max-width: 1270px;
  }
 
- body {
-     font-family: "Lato", sans-serif;
-     font-weight: 400;
-     line-height: 1.7rem;
-     color: $color-grey-dark;
-     padding: 1rem;
-     max-width: 1270px;
- }
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 3.2rem;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &--main {
+        opacity: .7;
+        display: block;
+        font-size: 3rem;
+        font-weight: 900;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-delay: .1s;
+        animation-timing-function: ease-in;
+        transition: .5s all;
 
- .heading-primary {
-     color: $color-white;
-     text-transform: uppercase;
-     text-align: center;
-     line-height: 3.2rem;
-     margin-bottom: 24px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     &--main {
-         opacity: .7;
-         display: block;
-         font-size: 3rem;
-         font-weight: 900;
-         animation-name: moveInLeft;
-         animation-duration: 1s;
-         animation-delay: .1s;
-         animation-timing-function: ease-in;
-         transition: .5s all;
-         .first-name {
-             letter-spacing: 1.5rem;
-         }
-         .last-name {
-             letter-spacing: .75rem;
-         }
-     }
-     &--sub {
-         display: block;
-         margin-top: 10px;
-         text-transform: none;
-         font-size: 1.6rem;
-         font-weight: 400;
-         letter-spacing: .75rem;
-         line-height: 2rem;
-         opacity: .8;
-         animation-name: moveInRight;
-         animation-duration: 1s;
-         animation-delay: .1s;
-         animation-timing-function: ease-in;
-     }
- }
-
- @media screen and (min-width: 768px) {
-
-    body {
-        padding: 3rem;
+        .first-name {
+            letter-spacing: 1.5rem;
+        }
+        .last-name {
+            letter-spacing: .75rem;
+        }
     }
-     .heading-primary {
-         color: $color-white;
-         text-transform: uppercase;
-         text-align: center;
-         line-height: 6.2rem;
-         margin-bottom: 60px;
-         &--main {
-             opacity: .8;
-             display: block;
-             font-size: 6rem;
-             font-weight: 900;
-             animation-name: moveInLeft;
-             animation-duration: 1s;
-             animation-delay: .1s;
-             animation-timing-function: ease-in;
-             .first-name {
-                 letter-spacing: 3.5rem;
-             }
-             .last-name {
-                 letter-spacing: 2rem;
-             }
-         }
-     }
- }
+    &--sub {
+        display: block;
+        margin-top: 10px;
+        text-transform: none;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: .75rem;
+        line-height: 2rem;
+        opacity: .8;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-delay: .1s;
+        animation-timing-function: ease-in;
+    }
+}
