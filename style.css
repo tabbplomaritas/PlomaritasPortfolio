@@ -313,7 +313,7 @@ footer {
   animation-timing-function: ease-in; }
 
 .about-pic1 {
-  background-image: url(../images/deadlift.jpeg);
+  background-image: url(images/deadlift.jpeg);
   transition: .3s all;
   height: 250px;
   width: 250px;
@@ -343,7 +343,7 @@ footer {
   top: -25rem;
   right: 0rem;
   visibility: hidden;
-  background-image: url(../images/lilymommy.jpg);
+  background-image: url(images/lilymommy.jpg);
   transition: .3s all; }
 
 .item2:hover > .about-pic2 {
@@ -364,7 +364,7 @@ footer {
   top: -25rem;
   right: 0rem;
   visibility: hidden;
-  background-image: url(../images/tabbCamera.jpg);
+  background-image: url(images/tabbCamera.jpg);
   transition: .3s all; }
 
 .item3:hover > .about-pic3 {
@@ -385,7 +385,7 @@ footer {
   top: -25rem;
   right: 0rem;
   visibility: hidden;
-  background-image: url(../images/stanley.jpg);
+  background-image: url(images/stanley.jpg);
   transition: .3s all; }
 
 .item4:hover > .about-pic4 {
@@ -406,7 +406,7 @@ footer {
   top: -25rem;
   right: 0rem;
   visibility: hidden;
-  background-image: url(../images/cocktail.jpg);
+  background-image: url(images/cocktail.jpg);
   transition: .3s all; }
 
 .item5:hover > .about-pic5 {

@@ -57,7 +57,7 @@
 }
 
 .about-pic1 {
-    background-image: url(../images/deadlift.jpeg);
+    background-image: url(images/deadlift.jpeg);
     transition: .3s all;
     @include aboutPicHidden(250px, 250px);
 }
@@ -68,7 +68,7 @@
 
 .about-pic2 {
     @include aboutPicHidden(250px, 250px);
-    background-image: url(../images/lilymommy.jpg);
+    background-image: url(images/lilymommy.jpg);
     transition: .3s all;
 }
 
@@ -78,7 +78,7 @@
 
 .about-pic3 {
     @include aboutPicHidden(200px, 300px);
-    background-image: url(../images/tabbCamera.jpg);
+    background-image: url(images/tabbCamera.jpg);
     transition: .3s all;
 }
 
@@ -88,7 +88,7 @@
 
 .about-pic4 {
     @include aboutPicHidden(200px, 300px);
-    background-image: url(../images/stanley.jpg);
+    background-image: url(images/stanley.jpg);
     transition: .3s all;
 }
 
@@ -98,7 +98,7 @@
 
 .about-pic5 {
     @include aboutPicHidden(200px, 300px);
-    background-image: url(../images/cocktail.jpg);
+    background-image: url(images/cocktail.jpg);
     transition: .3s all;
 }
 
