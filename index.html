@@ -26,6 +26,7 @@
                     </span>
                     <span class="heading-primary--sub">Modern Web Design & Development</span>
                 </h1>
+                <a href="#portfolio" class="btn2 btn2--white btn2--animated">View my Projects</a>
             </div>
         </header>
 
@@ -48,8 +49,10 @@
             </div>
         </section>
 
-        <section class="image-grid">
-            <img src="images/js.jpg" alt="Thumnbail Photo of Javascript exercise site">
+        <section class="image-grid" id="portfolio">
+
+            <img id="jsEx" src="images/js.jpg" alt="Thumbnail Photo of Javascript exercise site">
+
             <img src="images/natours.jpg" alt="Thumbnail of Natours Website Landing Page">
             <img src="images/tabbphotos.jpg" alt="Thumbnail of tabbPhotos landing page">
         </section>
@@ -62,6 +65,14 @@
             </p>
     </footer>
 
+
+<script>
+document.getElementById("jsEx").onclick = function() {
+    window.open("https://github.com/tabbatharenea/PlomaritasJavaScriptExercises");
+}
+
+
+</script>
 </body>
 
 </html>
