@@ -37,7 +37,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  text-decoration: none; }
 
 html {
   font-size: 62.5%; }
@@ -278,20 +279,44 @@ nav {
   align-items: center;
   order: 3;
   padding-bottom: 100px;
-  margin: 1rem; }
-  .image-grid img {
+  margin: 1rem;
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-align: center; }
+  .image-grid a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #777;
     height: 90%;
     width: 90%;
-    border-radius: 25px;
-    box-shadow: -5px 10px 19px -5px #b0adb0;
-    margin: 10px 5px;
-    transition: .25s all ease-in; }
-    .image-grid img:hover {
+    padding-bottom: 2.5rem;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box; }
+    .image-grid a:hover img {
       transform: translateY(0.3rem);
       box-shadow: -5px 10px 7px -5px #b0adb0; }
-    .image-grid img:active {
+    .image-grid a:hover p {
+      opacity: 1; }
+    .image-grid a:active {
       transform: translateY(0.6rem);
       box-shadow: -5px 10px 0px -5px #b0adb0; }
+  .image-grid a img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: -5px 10px 19px -5px #b0adb0;
+    transition: .25s all ease-in; }
+  .image-grid a a {
+    margin: 1rem;
+    padding: 1rem;
+    opacity: 0;
+    transition: .5s all;
+    width: 100%;
+    height: 25%;
+    border-radius: 25px;
+    z-index: 2; }
 
 footer {
   background-color: #eee;
@@ -566,7 +591,7 @@ footer {
   .image-grid {
     order: 4;
     flex-flow: row wrap; }
-    .image-grid img {
+    .image-grid a {
       height: 30%;
       width: 30%; }
   footer {
