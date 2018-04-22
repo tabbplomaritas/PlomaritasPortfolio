@@ -14,16 +14,31 @@
     }
 }
 
+@keyframes moveOutLeft {
+    0% {
+        opacity: 100;
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
+
+
 @keyframes moveInRight {
     0% {
         opacity: 0;
         transform: translateX(300px);
     }
-    80% {
+    50% {
         transform: translateX(-20px);
     }
     100% {
-        opacity: .8;
+        opacity: 1;
         transform: translate(0);
     }
 }
@@ -45,5 +60,15 @@
     }
     to {
         opacity: 1;
+    }
+}
+
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }

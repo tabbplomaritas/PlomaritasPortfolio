@@ -8,14 +8,24 @@
     opacity: .8;
     transform: translate(0); } }
 
+@keyframes moveOutLeft {
+  0% {
+    opacity: 100;
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(-50px); }
+  100% {
+    opacity: 0;
+    transform: translateX(-100px); } }
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
     transform: translateX(300px); }
-  80% {
+  50% {
     transform: translateX(-20px); }
   100% {
-    opacity: .8;
+    opacity: 1;
     transform: translate(0); } }
 
 @keyframes moveInBottom {
@@ -31,6 +41,12 @@
     opacity: 0; }
   to {
     opacity: 1; } }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 
 *,
 *::after,
@@ -101,14 +117,14 @@ body {
   position: relative;
   font-size: 1.5rem;
   transform: rotate(21.5deg);
-  transition: .25s all;
+  transition: .5s all;
   clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
   -webkit-clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%); }
 
 .btn:hover {
-  transform: rotate(0deg);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  color: #a1cda8;
+  background-color: #ff0080;
+  color: white;
   z-index: 1; }
 
 .btn:active {
@@ -205,7 +221,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   height: 20.8rem;
-  margin-top: -17vh;
+  margin-top: -14vh;
   list-style: none;
   transition: .5s all; }
 
@@ -272,6 +288,81 @@ nav {
   .mainContent a:hover {
     color: #a1cda8; }
 
+.projectInfo {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 40rem;
+  width: 70%;
+  border-radius: 25px;
+  background-color: rgba(187, 245, 239, 0.85);
+  position: fixed;
+  top: 20%;
+  z-index: 3;
+  box-shadow: -5px 10px 7px -5px #777;
+  align-self: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  transition: .5s all;
+  -webkit-transition: .5s all;
+  border: 0.5rem solid #ff0080; }
+  .projectInfo h2 {
+    transition: .25s all;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: .25rem; }
+
+.moveInRight {
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-fill-mode: backwards; }
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: .75s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: backwards; }
+
+.projectInfoBtn {
+  text-align: center;
+  display: inline-block;
+  padding: 1rem;
+  margin: .5rem;
+  width: 17rem;
+  background-color: #ff0080;
+  color: white;
+  clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
+  -webkit-clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
+  transition: .3s all; }
+
+.projectInfo a:hover {
+  font-weight: bold;
+  background-color: #ff8c00; }
+
+#closeProjectWindow {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  margin: 1rem 1rem 0 0;
+  color: #ff8c00;
+  transition: .25s all; }
+  #closeProjectWindow:hover {
+    cursor: pointer;
+    color: #ff0080; }
+
+.projectInfo p {
+  margin-top: 2.5rem;
+  width: 75%;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  transition: .25s all;
+  color: #302f2f; }
+
 .image-grid {
   display: flex;
   flex-flow: column;
@@ -283,32 +374,29 @@ nav {
   font-size: 1.75rem;
   font-weight: 300;
   text-align: center; }
-  .image-grid a {
+  .image-grid div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #777;
-    height: 90%;
-    width: 90%;
+    width: 75%;
     padding-bottom: 2.5rem;
     position: relative;
     text-align: center;
     box-sizing: border-box; }
-    .image-grid a:hover img {
+    .image-grid div:hover img {
       transform: translateY(0.3rem);
       box-shadow: -5px 10px 7px -5px #b0adb0; }
-    .image-grid a:hover p {
-      opacity: 1; }
-    .image-grid a:active {
+    .image-grid div:active {
       transform: translateY(0.6rem);
       box-shadow: -5px 10px 0px -5px #b0adb0; }
-  .image-grid a img {
+  .image-grid div img {
     width: 100%;
     border-radius: 25px;
     box-shadow: -5px 10px 19px -5px #b0adb0;
     transition: .25s all ease-in; }
-  .image-grid a a {
+  .image-grid div a {
     margin: 1rem;
     padding: 1rem;
     opacity: 0;
@@ -530,7 +618,7 @@ footer {
 
 @media screen and (min-width: 512px) {
   nav {
-    margin-top: -17.5vh; }
+    margin-top: -15vh; }
   footer {
     margin-top: -25%; }
   .heading-primary--main {
@@ -550,7 +638,13 @@ footer {
     transform: rotate(0deg); }
   .btn:active {
     transform: scale(1.1);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); } }
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .image-grid {
+    order: 4;
+    flex-flow: row wrap; }
+    .image-grid div {
+      height: 30%;
+      width: 40%; } }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
   body {
@@ -578,9 +672,11 @@ footer {
     .nav__links a {
       margin-right: 1.5rem; }
   .btn:link, .btn:visited {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+    transition: .5s all; }
   .btn:hover {
-    transform: rotate(12.5deg); }
+    background-color: #ff0080;
+    color: white; }
   .btn:active {
     transform: rotate(-12.5deg); }
   .header {
@@ -588,11 +684,18 @@ footer {
     background-position: 50% 19%; }
   .mainContent {
     order: 3; }
+  .projectInfo {
+    height: 50%;
+    width: 60%; }
+  .projectInfo h2 {
+    font-size: 3.5rem; }
+  .projectInfo p {
+    font-size: 2rem;
+    line-height: 2.5rem; }
   .image-grid {
     order: 4;
     flex-flow: row wrap; }
-    .image-grid a {
-      height: 30%;
+    .image-grid div {
       width: 30%; }
   footer {
     margin-top: -10%; }

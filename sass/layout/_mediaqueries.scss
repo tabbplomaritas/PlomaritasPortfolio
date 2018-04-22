@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 512px) {
     nav {
-        margin-top: -17.5vh;
+        margin-top: -15vh;
     }
 
    footer {
@@ -29,6 +29,7 @@
     }
 }
 
+
 //Widths between mobile and tablet+desktop to make the heading clip mask and rotating buttons move as the screen size is changed
 
 @media screen and (min-width: 650px) {
@@ -43,6 +44,14 @@
         &:active {
             transform: scale(1.1);
             box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        }
+    }
+    .image-grid {
+        order: 4;
+        flex-flow: row wrap;
+            div {
+            height: 30%;
+            width: 40%;
         }
     }
 }
@@ -95,9 +104,11 @@
         &:link,
         &:visited {
             transform: rotate(0deg);
+            transition: .5s all;
         }
         &:hover {
-            transform: rotate(12.5deg);
+            background-color: $color-primary;
+            color: white;
         }
         &:active {
             transform: rotate(-12.5deg);
@@ -114,13 +125,25 @@
         order: 3;
     }
 
+    .projectInfo {
+        height: 50%;
+        width: 60%;
+    }
+
+    .projectInfo h2 {
+        font-size: 3.5rem;
+    }
+
+    .projectInfo p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
     .image-grid {
         order: 4;
         flex-flow: row wrap;
-            a {
-            height: 30%;
+            div {
             width: 30%;
-    
         }
     }
     footer {
