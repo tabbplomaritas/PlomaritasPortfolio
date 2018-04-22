@@ -576,6 +576,60 @@ footer {
   animation-timing-function: ease-in-out;
   z-index: 3; }
 
+#contactMessage {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 1px solid #777;
+  padding-top: 2rem;
+  width: 50%; }
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  padding: 0rem;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  color: #ff0080;
+  font-size: 1.2rem;
+  transition: .45 all; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #777;
+  width: 17rem;
+  height: 17rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  transition: .5s all;
+  color: white;
+  font-size: 3rem;
+  text-align: center; }
+  .box p {
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: .5s all; }
+  .box .fa-2x {
+    color: white; }
+  .box:hover {
+    transform: translateY(0.3rem);
+    box-shadow: 0 7px 13px 4px #b0adb0; }
+
+.emailHighlight {
+  background-color: #ff0080;
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: 400; }
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -651,7 +705,10 @@ footer {
       height: 30%;
       width: 40%; }
   footer {
-    height: 22rem; } }
+    height: 22rem; }
+  .contactContainer {
+    flex-direction: row;
+    justify-content: center; } }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
   body {

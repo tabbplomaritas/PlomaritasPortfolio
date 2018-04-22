@@ -128,7 +128,14 @@ $("#tabbphotos").click(function(){
   }, 1000);
 });
 
-
+//contact page
+// $("#emailBox").hover(function(){
+//   $("#emailBoxText").text("TabbathaPlomaritas@gmail.com");
+//   $("#emailBoxText").addClass("emailHighlight");
+//   }, function() {
+//     $("#emailBoxText").text("Email Me");
+//     $("#emailBoxText").removeClass("emailHighlight");
+//   });
 
 
 

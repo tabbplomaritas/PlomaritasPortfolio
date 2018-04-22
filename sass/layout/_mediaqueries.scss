@@ -34,6 +34,7 @@
         transform: rotate(0deg);
         }
     }
+   
 }
 
 
@@ -65,7 +66,15 @@
     footer {
         height: 22rem;
     }
+    //contact page
+
+    .contactContainer {
+        flex-direction: row;
+        justify-content: center;
+    }
+
 }
+  
 
 
 // Tablet & Desktop & Landscape view
@@ -168,5 +177,13 @@
    .mainContent__about-list {
        height: 28.7rem;
        width: 40%;
+   }
+
+   .contactContainer {
+
+   }
+
+   .box {
+
    }
 }

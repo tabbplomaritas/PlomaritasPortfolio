@@ -1,3 +1,64 @@
+#contactMessage {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 2rem;
+    width: 50%;
+}
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    padding: 0rem;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    color: $color-primary;
+    font-size: 1.2rem;
+    transition: .45 all;
+}
+
+.box {
+display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: center;   
+background-color: $color-grey-dark;
+width: 17rem;
+height: 17rem;
+margin: 2rem;
+border-radius: 1rem;
+transition: .5s all;
+color: white;
+font-size: 3rem;
+text-align: center;
+    p {
+        color: white;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        transition: .5s all;
+    }
+    
+    .fa-2x {
+        color: white;
+    }
+    &:hover{
+        transform: translateY(.3rem);
+            box-shadow: 0 7px 13px 4px #b0adb0;
+    }
+}
+
+.emailHighlight {
+    background-color: $color-primary;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: 400;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
