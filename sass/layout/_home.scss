@@ -109,8 +109,8 @@ nav {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    height: 40rem;
-    width: 70%;
+    height: auto;
+    width: 75%;
     border-radius: 25px;
     background-color: rgba(#bbf5ef, 0.85);
     position: fixed;
@@ -118,15 +118,15 @@ nav {
     z-index: 3;
     box-shadow: -5px 10px 7px -5px $color-grey-dark;
     align-self: center;
-    font-size: 1.5rem;
-    padding: 2rem;
+    font-size: 1.2rem;
+    padding-top: 1rem;
     transition: .5s all;
     -webkit-transition: .5s all;
-    // opacity: 1;
     border: .5rem solid $color-primary;
 
     h2 {
         transition: .25s all;
+        margin-top: 2rem;
         margin-bottom: 2rem;
         font-size: 2.5rem;
         letter-spacing: .25rem;
@@ -135,7 +135,7 @@ nav {
 
 .moveInRight {
     animation-name: moveInRight;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-timing-function: ease-in;
     animation-delay: 0s;
     animation-fill-mode: backwards;
@@ -173,7 +173,6 @@ nav {
     top: 1rem;
     right: 1rem;
     font-size: 1rem;
-    margin: 1rem 1rem 0 0;
     color: $color-secondary;
     transition: .25s all;
     &:hover {
@@ -184,9 +183,10 @@ nav {
 
 .projectInfo p {
     margin-top: 2.5rem;
+    margin-bottom: 2rem;
     width: 75%;
-    font-size: 1.75rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     transition: .25s all;
     color: rgb(48, 47, 47);
 }
@@ -217,7 +217,7 @@ nav {
 
         &:hover img {
             transform: translateY(.3rem);
-            box-shadow: -5px 10px 7px -5px #b0adb0;
+            box-shadow: 0 7px 13px 4px #b0adb0;
         }
 
 
@@ -229,9 +229,8 @@ nav {
     div img {
 
             width: 100%;
-            // height: 100%;
             border-radius: 25px;
-            box-shadow: -5px 10px 19px -5px rgba(176,173,176,1);
+            box-shadow: 0 0 20px rgba(176,173,176,1);
             transition: .25s all ease-in;
     }
 
@@ -243,10 +242,8 @@ nav {
         transition: .5s all;
         width: 100%;
         height: 25%;
-
         border-radius: 25px;
         z-index: 2;
-        // background-color: $color-secondary;
     }
 }
 

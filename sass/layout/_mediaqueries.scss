@@ -1,3 +1,10 @@
+//iPhone X
+@media screen and (width: 375px) {
+    .btn:link, .btn:visited {
+        transform: rotate(23deg);
+    }
+}
+
 //Widths between mobile and tablet+desktop to make the heading clip mask and rotating buttons move as the screen size is changed
 
 @media screen and (min-width: 512px) {
@@ -68,6 +75,7 @@
 
     body {
         padding: 3rem;
+        margin: 0 auto;
     }
 
     .heading-primary {
@@ -91,14 +99,12 @@
         order: 1;
         justify-content: flex-end;
         height: 100%;
-        margin-top: 30px;
-        list-style: none;
         margin-top: 1rem;
     }
 
     .nav__links {
         flex-direction: row;
-        margin-right: 10px;
+        margin-right: 1rem;
         a {
             margin-right: 1.5rem;
         }
@@ -130,8 +136,8 @@
     }
 
     .projectInfo {
-        height: 50%;
-        width: 60%;
+        height: auto;
+        width: 75%;
     }
 
     .projectInfo h2 {
