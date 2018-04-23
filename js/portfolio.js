@@ -44,7 +44,7 @@ $("#portfolioThumb").click(function(){
     $("#projectInfoHeader").text("Tabbatha Plomaritas Portfolio");
     $("#viewOnGit").attr("href", "https://github.com/tabbplomaritas/plomaritasportfolio");
     $("#viewOnWeb").css("display", "none");
-    $("#projectDescript").text("My current web development portfolio is currently a work in progress and being refined daily. I am using Flexbox, CSS animations, JavaScript, and jQuery as I conintue to build this project. I am using this website to explore and practice the capabilities of SASS.");  
+    $("#projectDescript").text("My web development portfolio is currently a work in progress and being refined daily. I am using Flexbox, CSS animations, JavaScript, and jQuery as I conintue to build this project. I am using this website to explore and practice the capabilities of SASS.");  
   }, 500); 
 
   setTimeout(function(){
@@ -73,7 +73,7 @@ $("#todo").click(function(){
   setTimeout(function(){
     $(".projectInfo").addClass("moveInRight");
     $(".projectInfo").css("display", "flex");
-    $("#projectInfoHeader").text("Todo List");
+    $("#projectInfoHeader").text("To-do List");
     $("#viewOnGit").attr("href", "https://github.com/tabbplomaritas/ToDo-List");
     $("#viewOnWeb").attr("href", "https://tabbplomaritas.github.io/ToDo-List/");
     $("#projectDescript").text("An interactive Todo List app that uses JavaScript and jQuery.");  
