@@ -113,6 +113,27 @@ $("#gearshare").click(function(){
   }, 1000);
 });
 
+
+//addressbook
+
+
+
+$("#addressBook").click(function(){
+  setTimeout(function(){
+    $(".projectInfo").addClass("moveInRight");
+    $(".projectInfo").css("display", "flex");
+    $("#projectInfoHeader").text("Address Book");
+    $("#viewOnGit").attr("href", "https://github.com/tabbplomaritas/addressbook_DOM");
+    $("#viewOnWeb").attr("href", "https://tabbplomaritas.github.io/addressBook_DOM/");
+    $("#projectDescript").text("A pure JavaScript address book that allows users to use a form to add new contacts and delete dynamically created contacts.");  
+  }, 500); 
+
+  setTimeout(function(){
+    $(".projectInfo").removeClass("moveInRight");
+  }, 1000);
+});
+
+
 //tabbPhotos
 $("#tabbphotos").click(function(){
   setTimeout(function(){

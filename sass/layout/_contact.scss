@@ -48,7 +48,8 @@ text-align: center;
     }
     &:hover{
         transform: translateY(.3rem);
-            box-shadow: 0 7px 13px 4px #b0adb0;
+        box-shadow: 0 7px 13px 4px #b0adb0;
+        background-color: $color-primary;
     }
 }
 
