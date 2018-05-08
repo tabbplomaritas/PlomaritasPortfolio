@@ -296,7 +296,7 @@ nav {
   height: auto;
   width: 75%;
   border-radius: 25px;
-  background-color: rgba(187, 245, 239, 0.85);
+  background-color: rgba(255, 255, 255, 0.85);
   position: fixed;
   top: 20%;
   z-index: 3;
