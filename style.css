@@ -301,15 +301,16 @@ nav {
   padding: 1rem;
   height: auto;
   width: 75%;
-  max-width: 59.5rem;
+  max-width: 80.5rem;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
   z-index: 20;
   border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.85);
+  background: linear-gradient(rgba(255, 255, 255, 0.95), #ff8c00);
   box-shadow: -5px 10px 7px -5px #777;
   border: 0.5rem solid #ff0080;
+  text-shadow: .5px .5px 2px white;
   text-align: center;
   font-size: 1.2rem;
   transition: .5s all;
@@ -343,6 +344,8 @@ nav {
   width: 17rem;
   background-color: #ff0080;
   color: white;
+  text-shadow: none;
+  font-size: 1.5rem;
   clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
   -webkit-clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
   transition: .3s all; }
@@ -360,7 +363,8 @@ nav {
   transition: .25s all; }
   #closeProjectWindow:hover {
     cursor: pointer;
-    color: #ff0080; }
+    color: #ff0080;
+    transform: rotate(180deg); }
 
 .projectInfo p {
   margin-top: 2.5rem;
@@ -373,10 +377,11 @@ nav {
 
 .projectInfoImg {
   width: 90%;
+  max-width: 62rem;
   margin-bottom: 1rem;
   border-radius: 10%;
   border-radius: 25px;
-  box-shadow: 0 0 20px #b0adb0; }
+  box-shadow: -1px -1px 15px 1px rgba(0, 0, 0, 0.233); }
 
 .image-grid {
   display: flex;
@@ -875,6 +880,8 @@ li {
       width: 40%; }
   footer {
     height: 22rem; }
+  .projectInfo {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), #ff8c00); }
   .contactContainer {
     flex-direction: row;
     justify-content: center; } }
@@ -917,9 +924,6 @@ li {
     background-position: 50% 19%; }
   .mainContent {
     order: 3; }
-  .projectInfo {
-    height: auto;
-    width: 75%; }
   .projectInfo h2 {
     font-size: 3.5rem; }
   .projectInfo p {

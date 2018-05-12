@@ -69,6 +69,11 @@
     footer {
         height: 22rem;
     }
+
+    //projectInfo 
+    .projectInfo {
+        background: linear-gradient(rgba(255, 255, 255, 0.8), $color-secondary);
+    }
     
     //contact page
 
@@ -151,8 +156,8 @@
     }
 
     .projectInfo {
-        height: auto;
-        width: 75%;
+        // height: auto;
+        // width: 75%;
     }
 
     .projectInfo h2 {

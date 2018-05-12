@@ -10,10 +10,10 @@ $('a[href*=#]').click(function(event){
 
 //close projectInfo window
 $("#closeProjectWindow").click(function(){
-  $(".projectInfo").addClass("animated slideOutRight");
+  $(".projectInfo").addClass("animated slideOutRight-50");
   setTimeout(function(){
     $(".projectInfo").css("display", "none");
-    $(".projectInfo").removeClass("animated slideOutRight");
+    $(".projectInfo").removeClass("animated slideOutRight-50");
     // $("#viewOnWeb").css("display", "block");
   }, 1050);
 }); 
@@ -67,16 +67,16 @@ let clickedThumb = $(this)[0].id;
   console.log(projectHeader);
 
 //put those vairables into action and populate the project info popup
-    $(".projectInfo").addClass("animated slideInRight");
+    $(".projectInfo").addClass("animated slideInRight-50");
     $(".projectInfo").css("display", "flex");
     $("#projectInfoHeader").text(projectHeader);
     $("#viewOnGit").attr("href", gitCode);
     $("#viewOnWeb").attr("href", gitPage);
     $("#projectDescript").text(projectText);  
 
-//remove that animation class so that next time they click it runs again
+// remove that animation class so that next time they click it runs again
   setTimeout(function(){
-    $(".projectInfo").removeClass("animated moveInRight");
+    $(".projectInfo").removeClass("animated moveInRight-50");
   }, 1000);
 });
 

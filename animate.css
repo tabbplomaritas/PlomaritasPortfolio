@@ -3338,6 +3338,39 @@
   animation-name: slideInRight;
 }
 
+/* my own version of slideinright for when element has been transformed vertically on the window */
+
+@-webkit-keyframes slideInRight-50 {
+  from {
+    -webkit-transform: translate3d(100%, -50%, 0);
+    transform: translate3d(100%, -50%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+@keyframes slideInRight-50 {
+  from {
+    -webkit-transform: translate3d(100%, -50%, 0);
+    transform: translate3d(100%, -50%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+.slideInRight-50 {
+  -webkit-animation-name: slideInRight-50;
+  animation-name: slideInRight-50;
+}
+
 @-webkit-keyframes slideInUp {
   from {
     -webkit-transform: translate3d(0, 100%, 0);
@@ -3461,6 +3494,41 @@
   -webkit-animation-name: slideOutRight;
   animation-name: slideOutRight;
 }
+
+/* my own slideout right for when i've transformed the element up the page */
+
+@-webkit-keyframes slideOutRight-50 {
+  from {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, -50%, 0);
+    transform: translate3d(100%, -50%, 0);
+  }
+}
+
+
+@keyframes slideOutRight-50 {
+  from {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(150%, -50%, 0);
+    transform: translate3d(150%, -50%, 0);
+  }
+}
+
+.slideOutRight-50 {
+  -webkit-animation-name: slideOutRight-50;
+  animation-name: slideOutRight-50;
+}
+/* end of slideoutright-50 */
 
 @-webkit-keyframes slideOutUp {
   from {
