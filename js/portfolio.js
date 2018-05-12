@@ -1,3 +1,4 @@
+
 //smooth scrolling 
 
 $('a[href*=#]').click(function(event){
@@ -9,48 +10,91 @@ $('a[href*=#]').click(function(event){
 
 //close projectInfo window
 $("#closeProjectWindow").click(function(){
-  $(".projectInfo").addClass("fadeOut");
+  $(".projectInfo").addClass("animated slideOutRight");
   setTimeout(function(){
     $(".projectInfo").css("display", "none");
-    $(".projectInfo").removeClass("fadeOut");
-    $("#viewOnWeb").css("display", "block");
-  }, 550);
+    $(".projectInfo").removeClass("animated slideOutRight");
+    // $("#viewOnWeb").css("display", "block");
+  }, 1050);
 }); 
 
 
 //project thumbnail clicks
 
 //rockpaper
-$("#rockpaper").click(function(){
-  setTimeout(function(){
-    $(".projectInfo").addClass("moveInRight");
-    $(".projectInfo").css("display", "flex");
-    $("#projectInfoHeader").text("Rock Paper Scissors");
-    $("#viewOnGit").attr("href", "https://github.com/tabbplomaritas/rock-paper-scissors");
-    $("#viewOnWeb").attr("href", "https://tabbplomaritas.github.io/rock-paper-scissors/");
-    $("#projectDescript").text("A classic game of Rock, Paper, Scissors using Javascript and jQuery. Includes fun CSS transitions, animations, and sound effects!");  
-  }, 500); 
+$(".portfolio_img").click(function(){
 
+//declare variables needed to populate project info popup
+let projectHeader = "";
+let gitCode = "";
+let gitPage = "";
+let projectText = "";
+let clickedThumb = $(this)[0].id;
+//this is to test that we are grabbing correct value
+// console.log(clickedThumb); 
+
+// check which item is clicked and set variable values
+  // if(clickedThumb === "rockpaper"){
+  //   console.log("it's rock paper");
+  //   projectHeader = "Rock Paper Scissors";
+  //   gitCode = "https://github.com/tabbplomaritas/rock-paper-scissors";
+  //   gitPage ="https://tabbplomaritas.github.io/rock-paper-scissors/";
+  //   projectText = "A classic game of Rock, Paper, Scissors using Javascript and jQuery. Includes fun CSS transitions, animations, and sound effects!";
+  // } else if (clickedThumb === "portfolioThumb"){
+  //   console.log("it's portfolio time!");
+  //   projectHeader = "Tabbatha Plomaritas Portfolio";
+  //   gitCode = "https://github.com/tabbplomaritas/plomaritasportfolio";
+  //   gitPage ="http://www.tabbatha.net";
+  //   projectText = "My web development portfolio is currently a work in progress and being refined daily. I am using Flexbox, CSS animations, JavaScript, and jQuery as I conintue to build this project. I am using this website to explore and practice the capabilities of SASS, jQuery, and other super fun front-end development tools!";
+  // }
+
+  switch(clickedThumb){
+    case "rockpaper":
+      console.log("rockpaper is the clicked item."); 
+      projectHeader = "Rock Paper Scissors",
+      gitCode = "https://github.com/tabbplomaritas/rock-paper-scissors",
+      gitPage ="https://tabbplomaritas.github.io/rock-paper-scissors/",
+      projectText = "A classic game of Rock, Paper, Scissors using Javascript and jQuery. Includes fun CSS transitions, animations, and sound effects!";
+    break;
+
+    case "portfolioThumb":
+      console.log("it's portfolio time!");
+      projectHeader = "Tabbatha Plomaritas Portfolio";
+      gitCode = "https://github.com/tabbplomaritas/plomaritasportfolio";
+      gitPage ="http://www.tabbatha.net";
+      projectText = "My web development portfolio is currently a work in progress and being refined daily. I am using Flexbox, CSS animations, JavaScript, and jQuery as I conintue to build this project. I am using this website to explore and practice the capabilities of SASS, jQuery, and other super fun front-end development tools!";
+  }
+  console.log(projectHeader);
+
+//put those vairables into action and populate the project info popup
+    $(".projectInfo").addClass("animated slideInRight");
+    $(".projectInfo").css("display", "flex");
+    $("#projectInfoHeader").text(projectHeader);
+    $("#viewOnGit").attr("href", gitCode);
+    $("#viewOnWeb").attr("href", gitPage);
+    $("#projectDescript").text(projectText);  
+
+//remove that animation class so that next time they click it runs again
   setTimeout(function(){
-    $(".projectInfo").removeClass("moveInRight");
+    $(".projectInfo").removeClass("animated moveInRight");
   }, 1000);
 });
 
 //portfolio
-$("#portfolioThumb").click(function(){
-  setTimeout(function(){
-    $(".projectInfo").addClass("moveInRight");
-    $(".projectInfo").css("display", "flex");
-    $("#projectInfoHeader").text("Tabbatha Plomaritas Portfolio");
-    $("#viewOnGit").attr("href", "https://github.com/tabbplomaritas/plomaritasportfolio");
-    $("#viewOnWeb").css("display", "none");
-    $("#projectDescript").text("My web development portfolio is currently a work in progress and being refined daily. I am using Flexbox, CSS animations, JavaScript, and jQuery as I conintue to build this project. I am using this website to explore and practice the capabilities of SASS.");  
-  }, 500); 
+// $("#portfolioThumb").click(function(){
+//   setTimeout(function(){
+//     $(".projectInfo").addClass("moveInRight");
+//     $(".projectInfo").css("display", "flex");
+//     $("#projectInfoHeader").text("Tabbatha Plomaritas Portfolio");
+//     $("#viewOnGit").attr("href", "https://github.com/tabbplomaritas/plomaritasportfolio");
+//     $("#viewOnWeb").css("display", "none");
+//     $("#projectDescript").text("My web development portfolio is currently a work in progress and being refined daily. I am using Flexbox, CSS animations, JavaScript, and jQuery as I conintue to build this project. I am using this website to explore and practice the capabilities of SASS.");  
+//   }, 500); 
 
-  setTimeout(function(){
-    $(".projectInfo").removeClass("moveInRight");
-  }, 1000);
-});
+//   setTimeout(function(){
+//     $(".projectInfo").removeClass("moveInRight");
+//   }, 1000);
+// });
 
 //rgb game
 $("#rgb").click(function(){
@@ -148,6 +192,17 @@ $("#tabbphotos").click(function(){
     $(".projectInfo").removeClass("moveInRight");
   }, 1000);
 });
+
+//view projects mouseover 
+
+$("#viewPortfolio").on("mouseover", function(){
+  $("#viewPortfolio").addClass("animated jello");
+  setTimeout(function(){
+    $("#viewPortfolio").removeClass("animated jello");
+  }, 2000);
+})
+
+
 
 //contact page
 // $("#emailBox").hover(function(){

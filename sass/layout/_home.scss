@@ -68,6 +68,8 @@ nav {
     animation-delay: .1s;
     animation-timing-function: ease-in;
 
+
+    
     &__header {
         text-align: center;
         font-size: 3rem;
@@ -105,25 +107,35 @@ nav {
 }
 
 .projectInfo {
+    //display is set to flex in js when thumbnail is clicked
     display: none;
+    //flex attributes
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
+    align-self: center;
+    //margin, padding, height, width:
+    padding: 1rem;
     height: auto;
     width: 75%;
+    max-width: 59.5rem;
+    //positioning: 
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    //decorative
     border-radius: 25px;
     background-color: rgba(white, .85);
-    position: fixed;
-    top: 20%;
-    z-index: 3;
     box-shadow: -5px 10px 7px -5px $color-grey-dark;
-    align-self: center;
+    border: .5rem solid $color-primary;
+    //text style
+    text-align: center;
     font-size: 1.2rem;
-    padding-top: 1rem;
+    //transition and animations
     transition: .5s all;
     -webkit-transition: .5s all;
-    border: .5rem solid $color-primary;
+    
 
     h2 {
         transition: .25s all;
@@ -160,8 +172,8 @@ nav {
     width: 17rem;
     background-color: $color-primary;
     color: white;
-        clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
-        -webkit-clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
+    clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
+    -webkit-clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
     transition: .3s all;
 }
 
@@ -191,6 +203,14 @@ nav {
     line-height: 2rem;
     transition: .25s all;
     color: rgb(48, 47, 47);
+}
+
+.projectInfoImg {
+    width: 90%;
+    margin-bottom: 1rem;
+    border-radius: 10%;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(176,173,176,1);
 }
 
 .image-grid {

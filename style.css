@@ -120,16 +120,17 @@ body {
   transition: .5s all;
   clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
   -webkit-clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 12% 107%);
-  transform: rotate(0deg);
-  transition: .5s all; }
+  transition: .3s all; }
 
 .btn:hover {
+  transform: rotate(0deg);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   background-color: #ff0080;
   color: white;
   z-index: 1; }
 
 .btn:active {
+  transform: rotate(21.5deg);
   transform: scale(1.1);
   z-index: 1;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
@@ -168,13 +169,14 @@ body {
   padding: 10px 20px;
   display: inline-block;
   border-radius: 100px;
-  transition: all .2s;
+  transition: .25s all;
   position: relative;
   font-size: 1.3rem; }
 
 .btn2:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem; }
 
 .btn2:active {
   transform: translateY(-1px);
@@ -294,22 +296,24 @@ nav {
   display: none;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-direction: column;
+  align-self: center;
+  padding: 1rem;
   height: auto;
   width: 75%;
+  max-width: 59.5rem;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.85);
-  position: fixed;
-  top: 20%;
-  z-index: 3;
   box-shadow: -5px 10px 7px -5px #777;
-  align-self: center;
+  border: 0.5rem solid #ff0080;
+  text-align: center;
   font-size: 1.2rem;
-  padding-top: 1rem;
   transition: .5s all;
-  -webkit-transition: .5s all;
-  border: 0.5rem solid #ff0080; }
+  -webkit-transition: .5s all; }
   .projectInfo h2 {
     transition: .25s all;
     margin-top: 2rem;
@@ -366,6 +370,13 @@ nav {
   line-height: 2rem;
   transition: .25s all;
   color: #302f2f; }
+
+.projectInfoImg {
+  width: 90%;
+  margin-bottom: 1rem;
+  border-radius: 10%;
+  border-radius: 25px;
+  box-shadow: 0 0 20px #b0adb0; }
 
 .image-grid {
   display: flex;
@@ -681,6 +692,154 @@ footer {
     .contact-form button:active {
       transform: translateY(3px); }
 
+#mainContent {
+  width: 100%; }
+
+.blog-container {
+  position: relative;
+  order: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%; }
+
+.blogs {
+  border-radius: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto; }
+
+.blog-entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.26);
+  width: 100%;
+  height: auto;
+  font-size: 1.5rem;
+  box-shadow: 0px 0px 20px #888888; }
+
+.blog-entry h3 {
+  align-self: flex-start;
+  font-size: 3rem;
+  line-height: 3.25rem;
+  margin: .5rem 0;
+  font-weight: 600; }
+
+.blog-entry .date {
+  align-self: flex-start;
+  text-indent: 0rem; }
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem; }
+
+.blog-entry .md {
+  width: 50%; }
+
+.blog-entry .sm {
+  width: 25%; }
+
+.blog-entry p {
+  /* text-indent: 4rem; */
+  font-weight: 100;
+  width: 100%;
+  font-size: 1.4rem; }
+
+/* TODO: create a text indent that doesn't mess up images in mobile mode */
+/* .blog-entry div p::first-word {
+  text-indent: 4rem;
+} */
+hr {
+  margin: 1rem 0;
+  width: 100%;
+  color: rgba(211, 211, 211, 0.281);
+  opacity: .5; }
+
+hr:last-child {
+  width: 40%; }
+
+.blog-sidebar {
+  order: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0rem 0 5rem 0rem;
+  padding: .75rem;
+  background-color: rgba(255, 255, 255, 0.616);
+  color: #ff0080;
+  width: 20rem;
+  border-radius: 2.5rem;
+  height: auto;
+  /* border: .1rem solid rgba(211, 211, 211, 0.664); */
+  font-size: 1.4rem;
+  box-shadow: 0px 0px 20px #888888; }
+
+.blog-sidebar hr {
+  width: 75%;
+  align-self: center; }
+
+.blog-sidebar-widget {
+  width: 100%;
+  padding: .5rem; }
+
+.blog-sidebar-widget h4 {
+  align-self: center;
+  font-size: 2rem; }
+
+.blog-sidebar-widget ul {
+  margin-top: .5rem; }
+
+li {
+  padding: .25rem .5rem;
+  list-style: none; }
+
+.blog-img-hidden {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translateX(48.5%) translateY(-50%);
+  width: 90%;
+  height: auto;
+  box-shadow: 0px 0px 20px #000000;
+  z-index: 5; }
+
+#hidden-img-close {
+  color: white;
+  display: none;
+  position: fixed;
+  top: 10.5%;
+  right: 8.5%;
+  transform: translateX(48.5%) translateY(-50%);
+  z-index: 10; }
+
+#hidden-img-close:hover {
+  cursor: pointer;
+  color: #ff0080; }
+
+/* blog post layout and components */
+/* .float-right-50 {
+  width: 100%;
+  float: none;
+  margin: 0;
+} */
+/* .float-left-50 {
+  width: 50%;
+  float: left;
+  margin: 1rem 1rem 0 0;
+} */
 @media screen and (width: 375px) {
   .btn:link, .btn:visited {
     transform: rotate(23deg); } }
@@ -778,4 +937,45 @@ footer {
     flex-direction: row; }
   .mainContent__about-list {
     height: 28.7rem;
-    width: 40%; } }
+    width: 40%; }
+  .float-right-50 {
+    width: 50%;
+    float: right;
+    margin: 0 0rem 1rem 1.5rem; }
+  .float-left-50 {
+    width: 50%;
+    float: left;
+    margin: 1rem 1.5rem 0 0; }
+  /* .blog-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  } */
+  /* .blogs {
+    width: 85%;
+    margin-right: 6rem;
+  } */
+  .blogs {
+    margin-bottom: 3rem; }
+  .blog-entry:first-child {
+    width: 80%;
+    margin-right: 16rem; }
+  .blog-entry p {
+    font-size: 1.6rem;
+    text-indent: 4rem; }
+  .blog-sidebar {
+    margin: 3rem 0;
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: -10px;
+    right: 1.5rem; }
+  .blog-img-hidden {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translateX(48.5%) translateY(-50%);
+    width: 90%;
+    height: auto;
+    box-shadow: 0px 0px 20px #000000; } }
