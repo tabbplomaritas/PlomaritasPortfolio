@@ -126,13 +126,13 @@ let clickedThumb = $(this)[0].id;
       projectImg = "../images/projectThumbs/todo.jpg";
     break;
  
-    case "tabbPhotos":
+    case "tabbphotos":
       
       projectHeader = "Tabb Photos";
       gitCode = "https://github.com/tabbplomaritas/tabbphotos";
       gitPage ="https://tabbplomaritas.github.io/tabbphotos/";
-      projectText = "";
-      projectImg = ""
+      projectText = "This is the first website I built in my earliest stages of learning HTML and CSS. This photography portfolio landing page utilizes Bootstrap, Media Queries, sticky positioning, all contained in a well designed one page layout. Bonus fact: Tabbatha Plomaritas *is* tabbPhotos!";
+      projectImg = "../images/projectThumbs/tabbphotos.jpg"
     break;
     
     $("#projectDescript").html("This project is a landing page for a portrait and wedding photographer. One of my earliest projects, it utilizes Bootstrap, Media Queries, sticky positioning, all contained in a well designed one page layout. Bonus fact: Tabbatha Plomaritas <em>is</em> tabbPhotos!");  
