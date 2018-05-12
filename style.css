@@ -369,17 +369,17 @@ nav {
     transform: rotate(180deg); }
 
 .projectInfo p {
-  margin-top: 2.5rem;
-  margin-bottom: 2rem;
-  width: 75%;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  width: 80%;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
   transition: .25s all;
-  color: #302f2f; }
+  color: #020202; }
 
 #projectInfoImg {
   width: 90%;
-  max-width: 62rem;
+  max-width: 60rem;
   margin-bottom: 1rem;
   border-radius: 10%;
   border-radius: 25px;
@@ -930,8 +930,8 @@ li {
   .projectInfo h2 {
     font-size: 3.5rem; }
   .projectInfo p {
-    font-size: 2rem;
-    line-height: 2.5rem; }
+    font-size: 1.7rem;
+    line-height: 1.7rem; }
   .image-grid {
     order: 4;
     flex-flow: row wrap; }

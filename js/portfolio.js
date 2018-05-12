@@ -67,7 +67,7 @@ let clickedThumb = $(this)[0].id;
       projectHeader = "Divvy",
       gitCode = "https://github.com/tabbplomaritas/divvycopy",
       gitPage ="https://tabbplomaritas.github.io/divvycopy/",
-      projectText = "Divvy is a mobile-first budgeting website, built over the course of two days at Grand Circus as a midterm project. This was my first time planning and coding as a member of a small team. Besides the JavScript and jQuery problem solving I was able to practice, my biggest gain from this project was learning from the group dynamic. I had a ton of fun planning, designing, testing, troubleshooting, and completing Divvy with my team.";
+      projectText = "Divvy is a mobile-first budgeting website, built over the course of two days at Grand Circus as a midterm project. This was my first time planning and coding as a member of a small team. Besides the JavaScript and jQuery problem solving I was able to practice, my biggest gain from this project was learning from the group dynamic. I had a ton of fun planning, designing, testing, troubleshooting, and completing Divvy with my team.";
       projectImg = "../images/projectThumbs/Divvy.jpg"
 
     break;
