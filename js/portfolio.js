@@ -68,7 +68,7 @@ let clickedThumb = $(this)[0].id;
       gitCode = "https://github.com/tabbplomaritas/divvycopy",
       gitPage ="https://tabbplomaritas.github.io/divvycopy/",
       projectText = "Divvy is a mobile-first budgeting website, built over the course of two days at Grand Circus as a midterm project. This was my first time planning and coding as a member of a small team. Besides the JavScript and jQuery problem solving I was able to practice, my biggest gain from this project was learning from the group dynamic. I had a ton of fun planning, designing, testing, troubleshooting, and completing Divvy with my team.";
-      projectImg = "../images/projectThumbs/divvy.jpg"
+      projectImg = "../images/projectThumbs/Divvy.jpg"
 
     break;
 
@@ -125,18 +125,17 @@ let clickedThumb = $(this)[0].id;
       projectText = "An interactive Todo List app that uses JavaScript and jQuery.";
       projectImg = "../images/projectThumbs/todo.jpg";
     break;
-
-
-
-    $(".projectInfo").addClass("moveInRight");
-    $(".projectInfo").css("display", "flex");
-    $("#projectInfoHeader").text("To-do List");
-    $("#viewOnGit").attr("href", "https://github.com/tabbplomaritas/ToDo-List");
-    $("#viewOnWeb").attr("href", "https://tabbplomaritas.github.io/ToDo-List/");
-    $("#projectDescript").text("An interactive Todo List app that uses JavaScript and jQuery.");  
-
-
  
+    case "tabbPhotos":
+      
+      projectHeader = "Tabb Photos";
+      gitCode = "https://github.com/tabbplomaritas/tabbphotos";
+      gitPage ="https://tabbplomaritas.github.io/tabbphotos/";
+      projectText = "";
+      projectImg = ""
+    break;
+    
+    $("#projectDescript").html("This project is a landing page for a portrait and wedding photographer. One of my earliest projects, it utilizes Bootstrap, Media Queries, sticky positioning, all contained in a well designed one page layout. Bonus fact: Tabbatha Plomaritas <em>is</em> tabbPhotos!");  
   }
   console.log(projectHeader);
 
@@ -154,34 +153,6 @@ let clickedThumb = $(this)[0].id;
     $(".projectInfo").removeClass("animated moveInRight-50");
   }, 1000);
 });
-
-
-
-
- 
-
-
-
-
-
-
-
-
-//tabbPhotos
-$("#tabbphotos").click(function(){
-  setTimeout(function(){
-    $(".projectInfo").addClass("moveInRight");
-    $(".projectInfo").css("display", "flex");
-    $("#projectInfoHeader").text("tabbPhotos");
-    $("#viewOnGit").attr("href", "https://github.com/tabbplomaritas/tabbphotos");
-    $("#viewOnWeb").attr("href", "https://tabbplomaritas.github.io/tabbphotos/");
-    $("#projectDescript").html("This project is a landing page for a portrait and wedding photographer. One of my earliest projects, it utilizes Bootstrap, Media Queries, sticky positioning, all contained in a well designed one page layout. Bonus fact: Tabbatha Plomaritas <em>is</em> tabbPhotos!");  
-}, 500);  
-  setTimeout(function(){
-    $(".projectInfo").removeClass("moveInRight");
-  }, 1000);
-});
-
 
 //project info header mouseover effect
 $("#projectInfoHeader").on("mouseover", function(){

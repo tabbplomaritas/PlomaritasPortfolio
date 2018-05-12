@@ -417,6 +417,7 @@ nav {
     box-shadow: 0 0 20px #b0adb0;
     transition: .25s all ease-in; }
   .image-grid div img:hover {
+    cursor: pointer;
     transform: translateY(5px);
     -webkit-transform: translateY(5px);
     box-shadow: 0px 0px 6px 1px #b0adb0; }
