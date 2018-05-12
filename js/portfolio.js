@@ -193,16 +193,15 @@ $("#tabbphotos").click(function(){
   }, 1000);
 });
 
-//view projects mouseover 
 
-$("#viewPortfolio").on("mouseover", function(){
-  $("#viewPortfolio").addClass("animated jello");
+//project info header mouseover effect
+$("#projectInfoHeader").on("mouseover", function(){
+  $("#projectInfoHeader").addClass("animated jello");
+  
   setTimeout(function(){
-    $("#viewPortfolio").removeClass("animated jello");
-  }, 2000);
+    $("#projectInfoHeader").removeClass("animated jello");
+  }, 1000);
 })
-
-
 
 //contact page
 // $("#emailBox").hover(function(){

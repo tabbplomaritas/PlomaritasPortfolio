@@ -6,7 +6,7 @@ main {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
     animation-name: fadeIn;
-    animation-duration: .5s;
+    animation-duration: .3s;
     animation-timing-function: ease-in;
 }
 
@@ -18,7 +18,7 @@ nav {
     height: 20.8rem;
     margin-top: -14vh;
     list-style: none;
-    transition: .5s all
+    transition: .25s all
 }
 
 .nav__links {
@@ -64,7 +64,7 @@ nav {
     align-self: center;
     width: 90%;
     animation-name: moveInRight;
-    animation-duration: 1s;
+    animation-duration: .8s;
     animation-delay: .1s;
     animation-timing-function: ease-in;
 
@@ -126,7 +126,7 @@ nav {
     z-index: 20;
     //decorative
     border-radius: 25px;
-    background: linear-gradient(rgba(255, 255, 255, 0.95), $color-secondary);
+    background: linear-gradient(rgba(255, 255, 255, 0.95), $color-secondary-faded, $color-primary-faded);
     box-shadow: -5px 10px 7px -5px $color-grey-dark;
     border: .5rem solid $color-primary;
     //text style
@@ -134,8 +134,8 @@ nav {
     text-align: center;
     font-size: 1.2rem;
     //transition and animations
-    transition: .5s all;
-    -webkit-transition: .5s all;
+    transition: .4s all;
+    -webkit-transition: .4s all;
     
 
     h2 {
@@ -148,11 +148,12 @@ nav {
     }
 }
 
+//TODO: these work for now, but need to migrate animations over to animate.css 
 .moveInRight {
     animation-name: moveInRight;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-in;
-    animation-delay: 0s;
+    animation-delay: 1s;
     animation-fill-mode: backwards;
 }
 
@@ -268,7 +269,7 @@ div a {
     margin: 1rem;
     padding: 1rem;
     opacity: 0;
-    transition: .5s all;
+    transition: .25s all;
     width: 100%;
     height: 25%;
     border-radius: 25px;
