@@ -130,7 +130,7 @@ nav {
     box-shadow: -5px 10px 7px -5px $color-grey-dark;
     border: .5rem solid $color-primary;
     //text style
-    text-shadow: .5px .5px 2px white;
+    text-shadow: .1px .1px 1px white;
     text-align: center;
     font-size: 1.2rem;
     //transition and animations
@@ -145,6 +145,8 @@ nav {
         font-size: 2.5rem;
         letter-spacing: .25rem;
         line-height: 3.25rem;
+        animation-duration: .75s;
+        animation-delay: 0s;
     }
 }
 
@@ -210,7 +212,7 @@ nav {
     color: rgb(48, 47, 47);
 }
 
-.projectInfoImg {
+#projectInfoImg {
     width: 90%;
     max-width: 62rem;
     margin-bottom: 1rem;

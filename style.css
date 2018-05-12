@@ -310,7 +310,7 @@ nav {
   background: linear-gradient(rgba(255, 255, 255, 0.95), #ffbc6a, #fa5677);
   box-shadow: -5px 10px 7px -5px #777;
   border: 0.5rem solid #ff0080;
-  text-shadow: .5px .5px 2px white;
+  text-shadow: .1px .1px 1px white;
   text-align: center;
   font-size: 1.2rem;
   transition: .4s all;
@@ -321,7 +321,9 @@ nav {
     margin-bottom: 2rem;
     font-size: 2.5rem;
     letter-spacing: .25rem;
-    line-height: 3.25rem; }
+    line-height: 3.25rem;
+    animation-duration: .75s;
+    animation-delay: 0s; }
 
 .moveInRight {
   animation-name: moveInRight;
@@ -375,7 +377,7 @@ nav {
   transition: .25s all;
   color: #302f2f; }
 
-.projectInfoImg {
+#projectInfoImg {
   width: 90%;
   max-width: 62rem;
   margin-bottom: 1rem;
