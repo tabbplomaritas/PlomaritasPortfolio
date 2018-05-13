@@ -10,6 +10,7 @@ $('a[href*=#]').click(function(event){
 
 //close projectInfo window
 $("#closeProjectWindow").click(function(){
+  $("#click")[0].play();
   $(".projectInfo").addClass("animated slideOutRight-50");
   setTimeout(function(){
     $(".projectInfo").css("display", "none");
@@ -147,4 +148,8 @@ $("#projectInfoHeader").on("mouseover", function(){
   setTimeout(function(){
     $("#projectInfoHeader").removeClass("animated jello");
   }, 1000);
+})
+
+$("#viewPortfolio_btn").on("click", function(){
+  $("#click")[0].play();
 })
