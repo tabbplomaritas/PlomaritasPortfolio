@@ -34,22 +34,7 @@ let clickedThumb = $(this)[0].id;
 //this is to test that we are grabbing correct value
 // console.log(clickedThumb); 
 
-// check which item is clicked and set variable values
-  // if(clickedThumb === "rockpaper"){
-  //   console.log("it's rock paper");
-  //   projectHeader = "Rock Paper Scissors";
-  //   gitCode = "https://github.com/tabbplomaritas/rock-paper-scissors";
-  //   gitPage ="https://tabbplomaritas.github.io/rock-paper-scissors/";
-  //   projectText = "A classic game of Rock, Paper, Scissors using Javascript and jQuery. Includes fun CSS transitions, animations, and sound effects!";
-  // } else if (clickedThumb === "portfolioThumb"){
-  //   console.log("it's portfolio time!");
-  //   projectHeader = "Tabbatha Plomaritas Portfolio";
-  //   gitCode = "https://github.com/tabbplomaritas/plomaritasportfolio";
-  //   gitPage ="http://www.tabbatha.net";
-  //   projectText = "My web development portfolio is currently a work in progress and being refined daily. I am using Flexbox, CSS animations, JavaScript, and jQuery as I conintue to build this project. I am using this website to explore and practice the capabilities of SASS, jQuery, and other super fun front-end development tools!";
-  // }
-
-  //template to add new projectinfo case
+//template to add new projectinfo case
 
   // case "portfolioThumb":
     
@@ -65,8 +50,8 @@ let clickedThumb = $(this)[0].id;
     case "divvy":
     
       projectHeader = "Divvy",
-      gitCode = "https://github.com/tabbplomaritas/divvycopy",
-      gitPage ="https://tabbplomaritas.github.io/divvycopy/",
+      gitCode = "https://github.com/johnson-cameron/Divvy",
+      gitPage ="https://johnson-cameron.github.io/Divvy/",
       projectText = "Divvy is a mobile-first budgeting website, built over the course of two days at Grand Circus as a midterm project. This was my first time planning and coding as a member of a small team. Besides the JavaScript and jQuery problem solving I was able to practice, my biggest gain from this project was learning from the group dynamic. I had a ton of fun planning, designing, testing, troubleshooting, and completing Divvy with my team.";
       projectImg = "../images/projectThumbs/Divvy.jpg"
 
@@ -140,6 +125,7 @@ let clickedThumb = $(this)[0].id;
   console.log(projectHeader);
 
 //put those vairables into action and populate the project info window
+    $("#swipe")[0].play();
     $(".projectInfo").addClass("animated slideInRight-50");
     $(".projectInfo").css("display", "flex");
     $("#projectInfoHeader").text(projectHeader);
@@ -162,39 +148,3 @@ $("#projectInfoHeader").on("mouseover", function(){
     $("#projectInfoHeader").removeClass("animated jello");
   }, 1000);
 })
-
-//contact page
-// $("#emailBox").hover(function(){
-//   $("#emailBoxText").text("TabbathaPlomaritas@gmail.com");
-//   $("#emailBoxText").addClass("emailHighlight");
-//   }, function() {
-//     $("#emailBoxText").text("Email Me");
-//     $("#emailBoxText").removeClass("emailHighlight");
-//   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function projectInfo(val) {
-//   if ((val) == $("#rockpaper")){
-//   $(".projectInfo").css("display", "flex");
-//   $("#projectInfoHeader").text("Rock Paper Scissors");
-//   $("#viewOnGit").attr("href", "https://github.com/tabbplomaritas/rock-paper-scissors");
-//   $("#viewOnWeb").attr("href", "https://tabbplomaritas.github.io/rock-paper-scissors/");
-//   $("#projectDescript").text("A classic game of Rock, Paper, Scissors using Javascript and jQuery. Includes fun CSS transitions, animations, and sound effects!");
-//   }
-// };
-
-
-// if ($(this) == $("#rockpaper")){

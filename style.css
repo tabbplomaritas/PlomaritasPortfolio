@@ -885,6 +885,9 @@ li {
     height: 22rem; }
   .projectInfo {
     background: linear-gradient(rgba(255, 255, 255, 0.829), #ffbc6a, #fa5677); }
+  .projectInfoLinks {
+    display: flex;
+    flex-direction: row; }
   .contactContainer {
     flex-direction: row;
     justify-content: center; } }

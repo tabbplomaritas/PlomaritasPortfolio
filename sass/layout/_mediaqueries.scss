@@ -74,6 +74,11 @@
     .projectInfo {
         background: linear-gradient(rgba(255, 255, 255, 0.829), $color-secondary-faded, $color-primary-faded);
     }
+
+    .projectInfoLinks {
+        display: flex;
+        flex-direction: row;
+    }
     
     //contact page
 
