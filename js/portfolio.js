@@ -126,6 +126,7 @@ let clickedThumb = $(this)[0].id;
   console.log(projectHeader);
 
 //put those vairables into action and populate the project info window
+
     $("#swipe")[0].play();
     $(".projectInfo").addClass("animated slideInRight-50");
     $(".projectInfo").css("display", "flex");
