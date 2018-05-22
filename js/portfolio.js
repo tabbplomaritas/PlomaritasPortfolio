@@ -121,13 +121,21 @@ let clickedThumb = $(this)[0].id;
       projectImg = "../images/projectThumbs/tabbphotos.jpg"
     break;
     
-    $("#projectDescript").html("This project is a landing page for a portrait and wedding photographer. One of my earliest projects, it utilizes Bootstrap, Media Queries, sticky positioning, all contained in a well designed one page layout. Bonus fact: Tabbatha Plomaritas <em>is</em> tabbPhotos!");  
+    case "todo-angular":
+      
+      projectHeader = "Todo List with AngularJS";
+      gitCode = "https://github.com/tabbplomaritas/Todo-list-Angular";
+      gitPage ="https://tabbplomaritas.github.io/Todo-list-Angular/";
+      projectText = "My latest rendition of the todo list app - this time built with AngularJS! This todo list allows the user to input new tasks, mark them as complete, delete them, or filter the displayed tasks based on user input text.";
+      projectImg = "../images/projectThumbs/todo-angular.jpg"
+    break;
+   
   }
   console.log(projectHeader);
 
 //put those vairables into action and populate the project info window
 
-    $("#swipe")[0].play();
+
     $(".projectInfo").addClass("animated slideInRight-50");
     $(".projectInfo").css("display", "flex");
     $("#projectInfoHeader").text(projectHeader);
