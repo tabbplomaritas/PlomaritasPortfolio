@@ -239,7 +239,7 @@ div {
     align-items: center;
     color: $color-grey-dark;
     width: 75%;
-    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
     position: relative;
     text-align: center;
     box-sizing: border-box;
@@ -249,34 +249,78 @@ div {
 &:active {
     -webkit-transform: translateY(.6rem);
     transform: translateY(.6rem); 
-    box-shadow: -5px 10px 0px -5px #b0adb0;
 }
-}
-div img {
-    width: 100%;
-    border-radius: 25px;
-    box-shadow: 0 0 20px rgba(176,173,176,1);
-    transition: .25s all ease-in;
-    } 
 
-div img:hover {
+}
+    div img {
+        width: 100%;
+        border-radius: 25px;
+        box-shadow: 0 0 20px rgba(176,173,176,1);
+        transition: .25s all ease-in;
+        } 
+
+    div .toolsUsedContainer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        bottom: 0;
+        z-index: 4;
+        background-color: transparent;
+        border-radius: 2.5rem;
+        overflow: hidden;
         cursor: pointer;
-        transform: translateY(5px);
-        -webkit-transform: translateY(5px); 
-        box-shadow: 0px 0px 6px 1px rgba(176,173,176,1);
-    
-}    
+    }
+    div .toolsUsed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        bottom: 0;
+        z-index: 5;
+        padding-bottom: 2.5rem;
+        border-radius: 2.5rem;
+        background-color: rgba(255, 255, 255, 0.934);
+        transition: .4s all;
+        visibility: hidden;
+    }
 
-div a {
-    margin: 1rem;
-    padding: 1rem;
-    opacity: 0;
-    transition: .25s all;
-    width: 100%;
-    height: 25%;
-    border-radius: 25px;
-    z-index: 2;
-}
+    div .tools {
+        font-size: 3.2rem;
+        margin: 1rem;
+        font-weight: 700;
+        color: $color-primary;
+        text-align: right;
+        width: 100%;
+        line-height: 3rem;
+        font-style: italic;
+    }
+
+//TODO: previously used portfolio thumbnail hover style, now using jquery mouseover, remove this once everything is fully tested and working
+    // div img:hover {
+    //         cursor: pointer;
+    //         transform: translateY(5px);
+    //         -webkit-transform: translateY(5px); 
+    //         box-shadow: 0px 0px 6px 1px rgba(176,173,176,1);
+    // }    
+
+    div a {
+        margin: 1rem;
+        padding: 1rem;
+        opacity: 0;
+        transition: .25s all;
+        width: 100%;
+        height: 25%;
+        border-radius: 25px;
+        z-index: 2;
+    }
 }
 
 

@@ -23,15 +23,19 @@ $("#closeProjectWindow").click(function(){
 //project thumbnail clicks
 
 //rockpaper
-$(".portfolio_img").click(function(){
+$(".toolsUsedContainer").click(function(){
+  let clicked = $(this).siblings();
+console.log(clicked);
 
 //declare variables needed to populate project info popup
 let projectHeader = "";
 let gitCode = "";
 let gitPage = "";
 let projectText = "";
-let  projectImg = "";
-let clickedThumb = $(this)[0].id;
+let projectImg = "";
+let toolsUsed = "";
+let clickedThumb = clicked[0].id;
+
 //this is to test that we are grabbing correct value
 // console.log(clickedThumb); 
 
@@ -48,6 +52,7 @@ let clickedThumb = $(this)[0].id;
 
 
   switch(clickedThumb){
+    
     case "divvy":
     
       projectHeader = "Divvy",
@@ -55,7 +60,17 @@ let clickedThumb = $(this)[0].id;
       gitPage ="https://johnson-cameron.github.io/Divvy/",
       projectText = "Divvy is a mobile-first budgeting website, built over the course of two days at Grand Circus as a midterm project. This was my first time planning and coding as a member of a small team. Besides the JavaScript and jQuery problem solving I was able to practice, my biggest gain from this project was learning from the group dynamic. I had a ton of fun planning, designing, testing, troubleshooting, and completing Divvy with my team.";
       projectImg = "../images/projectThumbs/Divvy.jpg"
+      
+    break;
 
+    case "recipeFinder":
+    
+      projectHeader = "Recipe Finder",
+      gitCode = "https://github.com/tabbplomaritas/recipe-finder",
+      gitPage ="https://tabbplomaritas.github.io/recipe-finder",
+      projectText = "This recipe finder website, titled 'From Ramen to Ratatouille', is a collaborative project completed by my team of three. This is a single page application utilizing AngularJS ng-route to change the users view without ever leaving the page. I enjoyed contributing to all aspects of this website including the design, the CSS, and all JavaScript";
+      projectImg = "../images/projectThumbs/recipeFinder.jpg"
+      
     break;
 
     case "rockpaper":
@@ -161,4 +176,25 @@ $("#projectInfoHeader").on("mouseover", function(){
 
 $("#viewPortfolio_btn").on("click", function(){
   $("#click")[0].play();
+})
+
+//project thumbnail mouseover effects
+
+//mouseover
+$("#portfolio > div > div").on("mouseover", function(){
+  // console.log(this);
+  $(this).find('div').addClass("animated slideInUp");
+  $(this).find('div').css("visibility", "visible");
+})
+
+//mouseleave
+$("#portfolio > div > div").on("mouseleave", function(){
+  $(this).find('div').removeClass("animated slideInUp");
+  $(this).find('div').addClass("animated slideOutDown");
+  let that = this;
+  setTimeout(function(){  
+    $(that).find('div').css("visibility", "hidden");
+    $(that).find('div').removeClass("animated slideOutDown");
+  }, 500);
+  
 })
