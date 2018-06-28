@@ -36,20 +36,6 @@ let projectImg = "";
 let toolsUsed = "";
 let clickedThumb = clicked[0].id;
 
-//this is to test that we are grabbing correct value
-// console.log(clickedThumb); 
-
-//template to add new projectinfo case
-
-  // case "portfolioThumb":
-    
-    // projectHeader = "";
-    // gitCode = "";
-    // gitPage ="";
-    // projectText = "";
-    // projectImg = ""
-  // break;
-
 
   switch(clickedThumb){
     
