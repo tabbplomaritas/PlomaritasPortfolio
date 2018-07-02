@@ -38,6 +38,16 @@ let clickedThumb = clicked[0].id;
 
 
   switch(clickedThumb){
+
+    case "kapow":
+    
+      projectHeader = "Kapow",
+      gitCode = "https://github.com/tabbplomaritas/Superhero_FinalProject",
+      gitPage ="http://kapow-game.herokuapp.com/#!/startgame",
+      projectText = "Kapow is a study game for middle schoolers than utilizes superheroes and villains to make learning fun! Users select their grade and school subject, chose their superhero character, then defeat a randomly selected opponent by correctly answering trivia questions on their subject. This collaboritve project was built as a SPA using AngularJS, Node.js, Express, and the SuperheoDB api. We utilized fun custom animations, sound effects, and custom color themes that change based up the superhero chosen.";
+      projectImg = "../images/projectThumbs/kapow-1.jpg"
+      
+    break;
     
     case "divvy":
     
