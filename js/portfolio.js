@@ -122,15 +122,6 @@ let clickedThumb = clicked[0].id;
       projectText = "An interactive Todo List app that uses JavaScript and jQuery.";
       projectImg = "../images/projectThumbs/todo.jpg";
     break;
- 
-    case "tabbphotos":
-      
-      projectHeader = "Tabb Photos";
-      gitCode = "https://github.com/tabbplomaritas/tabbphotos";
-      gitPage ="https://tabbplomaritas.github.io/tabbphotos/";
-      projectText = "This is the first website I built in my earliest stages of learning HTML and CSS. This photography portfolio landing page utilizes Bootstrap, Media Queries, sticky positioning, all contained in a well designed one page layout. Bonus fact: Tabbatha Plomaritas *is* tabbPhotos!";
-      projectImg = "../images/projectThumbs/tabbphotos.jpg"
-    break;
     
     case "todo-angular":
       
