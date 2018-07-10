@@ -48,6 +48,16 @@ let clickedThumb = clicked[0].id;
       projectImg = "../images/projectThumbs/kapow-1.jpg"
       
     break;
+
+    case "expressFresh":
+    
+      projectHeader = "Express Fresh",
+      gitCode = "https://github.com/tabbplomaritas/express-shoppingcart",
+      gitPage ="https://expressfresh.herokuapp.com/",
+      projectText = "Express Fresh is a work-in-progress full-stack application meant to allow users to support local farmers markets while saving time by browsing and shopping for farmer's market items and then paying for and picking them up onsite. It is built with AngularJS, Node.js, Express, and PostgreSQL. This project began as a simple shopping cart to practice the essentials of SQL and PostgreSQL and I'm greatly enjoying building it out further to integrate a sleek and modern UI as well as expanding the data used in the backend.";
+      projectImg = "../images/projectThumbs/expressfresh.jpg"
+      
+    break;
     
     case "divvy":
     
