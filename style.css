@@ -430,7 +430,7 @@ nav {
   .image-grid div .toolsUsed {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem;
     width: 100%;
@@ -446,13 +446,11 @@ nav {
     transition: .4s all;
     visibility: hidden; }
   .image-grid div .tools {
-    font-size: 2.5rem;
-    margin: 1rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: #ff0080;
     text-align: right;
     width: 100%;
-    line-height: 3rem;
     font-style: italic; }
   .image-grid div a {
     margin: 1rem;
