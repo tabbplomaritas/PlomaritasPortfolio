@@ -9,6 +9,7 @@
 .contactContainer {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 1.5rem;
     padding: 0rem;
     justify-content: space-around;
@@ -24,8 +25,8 @@
 .box {
 display: flex;
 flex-direction: column;
-justify-content: center; 
-align-items: center;   
+justify-content: center;
+align-items: center;
 background-color: $color-grey-dark;
 width: 17rem;
 height: 17rem;
@@ -42,7 +43,7 @@ text-align: center;
         font-weight: 300;
         transition: .5s all;
     }
-    
+
     .fa-2x {
         color: white;
     }

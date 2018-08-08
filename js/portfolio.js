@@ -1,5 +1,5 @@
 
-//smooth scrolling 
+//smooth scrolling
 
 $('a[href*=#]').click(function(event){
   $('html, body').animate({
@@ -10,14 +10,14 @@ $('a[href*=#]').click(function(event){
 
 //close projectInfo window
 $("#closeProjectWindow").click(function(){
-  $("#click")[0].play();
+
   $(".projectInfo").addClass("animated slideOutRight-50");
   setTimeout(function(){
     $(".projectInfo").css("display", "none");
     $(".projectInfo").removeClass("animated slideOutRight-50");
 
   }, 1050);
-}); 
+});
 
 
 //project thumbnail clicks
@@ -40,47 +40,47 @@ let clickedThumb = clicked[0].id;
   switch(clickedThumb){
 
     case "kapow":
-    
+
       projectHeader = "Kapow",
       gitCode = "https://github.com/tabbplomaritas/Superhero_FinalProject",
       gitPage ="http://kapow-game.herokuapp.com/#!/startgame",
       projectText = "Kapow is a study game for middle schoolers than utilizes superheroes and villains to make learning fun! Users select their grade and school subject, chose their superhero character, then defeat a randomly selected opponent by correctly answering trivia questions on their subject. This collaboritve project was built as a SPA using AngularJS, Node.js, Express, and the SuperheoDB api. We utilized fun custom animations, sound effects, and custom color themes that change based up the superhero chosen.";
       projectImg = "../images/projectThumbs/kapow-1.jpg"
-      
+
     break;
 
     case "expressFresh":
-    
+
       projectHeader = "Express Fresh",
       gitCode = "https://github.com/tabbplomaritas/express-shoppingcart",
       gitPage ="https://expressfresh.herokuapp.com/",
       projectText = "Express Fresh is a work-in-progress full-stack application meant to allow users to support local farmers markets while saving time by browsing and shopping for farmer's market items and then paying for and picking them up onsite. It is built with AngularJS, Node.js, Express, and PostgreSQL. This project began as a simple shopping cart to practice the essentials of SQL and PostgreSQL and I'm greatly enjoying building it out further to integrate a sleek and modern UI as well as expanding the data used in the backend.";
       projectImg = "../images/projectThumbs/expressfresh.jpg"
-      
+
     break;
-    
+
     case "divvy":
-    
+
       projectHeader = "Divvy",
       gitCode = "https://github.com/johnson-cameron/Divvy",
       gitPage ="https://johnson-cameron.github.io/Divvy/",
       projectText = "Divvy is a mobile-first budgeting website, built over the course of two days at Grand Circus as a midterm project. This was my first time planning and coding as a member of a small team. Besides the JavaScript and jQuery problem solving I was able to practice, my biggest gain from this project was learning from the group dynamic. I had a ton of fun planning, designing, testing, troubleshooting, and completing Divvy with my team.";
       projectImg = "../images/projectThumbs/Divvy.jpg"
-      
+
     break;
 
     case "recipeFinder":
-    
+
       projectHeader = "Recipe Finder",
       gitCode = "https://github.com/tabbplomaritas/recipe-finder",
       gitPage ="https://tabbplomaritas.github.io/recipe-finder",
       projectText = "This recipe finder website, titled 'From Ramen to Ratatouille', is a collaborative project completed by my team of three. This is a single page application utilizing AngularJS ng-route to change the users view without ever leaving the page. I enjoyed contributing to all aspects of this website including the design, the CSS, and all JavaScript";
       projectImg = "../images/projectThumbs/recipeFinder.jpg"
-      
+
     break;
 
     case "rockpaper":
-      
+
       projectHeader = "Rock Paper Scissors",
       gitCode = "https://github.com/tabbplomaritas/rock-paper-scissors",
       gitPage ="https://tabbplomaritas.github.io/rock-paper-scissors/",
@@ -89,7 +89,7 @@ let clickedThumb = clicked[0].id;
     break;
 
     case "portfolioThumb":
-    
+
       projectHeader = "Tabbatha Plomaritas Portfolio";
       gitCode = "https://github.com/tabbplomaritas/plomaritasportfolio";
       gitPage ="http://www.tabbatha.net";
@@ -98,7 +98,7 @@ let clickedThumb = clicked[0].id;
     break;
 
     case "gearshare":
-    
+
       projectHeader = "GearShare";
       gitCode = "https://github.com/tabbplomaritas/GearShare";
       gitPage ="https://tabbplomaritas.github.io/GearShare/";
@@ -107,7 +107,7 @@ let clickedThumb = clicked[0].id;
     break;
 
     case "addressBook":
-      
+
       projectHeader = "Address Book";
       gitCode = "https://github.com/tabbplomaritas/addressbook_DOM";
       gitPage ="https://tabbplomaritas.github.io/addressBook_DOM/";
@@ -116,7 +116,7 @@ let clickedThumb = clicked[0].id;
     break;
 
     case "rgb":
-      
+
       projectHeader = "The Great RGB Game";
       gitCode = "https://github.com/tabbplomaritas/Color-Game";
       gitPage ="https://tabbplomaritas.github.io/Color-Game/";
@@ -125,23 +125,23 @@ let clickedThumb = clicked[0].id;
     break;
 
     case "todo":
-    
+
       projectHeader = "To-Do List";
       gitCode = "https://github.com/tabbplomaritas/ToDo-List";
       gitPage ="https://tabbplomaritas.github.io/ToDo-List/";
       projectText = "An interactive Todo List app that uses JavaScript and jQuery.";
       projectImg = "../images/projectThumbs/todo.jpg";
     break;
-    
+
     case "todo-angular":
-      
+
       projectHeader = "Todo List with AngularJS";
       gitCode = "https://github.com/tabbplomaritas/Todo-list-Angular";
       gitPage ="https://tabbplomaritas.github.io/Todo-list-Angular/";
       projectText = "My latest rendition of the todo list app - this time built with AngularJS! This todo list allows the user to input new tasks, mark them as complete, delete them, or filter the displayed tasks based on user input text.";
       projectImg = "../images/projectThumbs/todo-angular.jpg"
     break;
-   
+
   }
   console.log(projectHeader);
 
@@ -153,7 +153,7 @@ let clickedThumb = clicked[0].id;
     $("#projectInfoHeader").text(projectHeader);
     $("#viewOnGit").attr("href", gitCode);
     $("#viewOnWeb").attr("href", gitPage);
-    $("#projectDescript").text(projectText);  
+    $("#projectDescript").text(projectText);
     $("#projectInfoImg").attr("src", projectImg);
 
 // remove that animation class so that next time they click it runs again
@@ -165,15 +165,13 @@ let clickedThumb = clicked[0].id;
 //project info header mouseover effect
 $("#projectInfoHeader").on("mouseover", function(){
   $("#projectInfoHeader").addClass("animated jello");
-  
+
   setTimeout(function(){
     $("#projectInfoHeader").removeClass("animated jello");
   }, 1000);
 })
 
-$("#viewPortfolio_btn").on("click", function(){
-  $("#click")[0].play();
-})
+
 
 //project thumbnail mouseover effects
 
@@ -189,9 +187,9 @@ $("#portfolio > div > div").on("mouseleave", function(){
   $(this).find('div').removeClass("animated slideInUp");
   $(this).find('div').addClass("animated slideOutDown");
   let that = this;
-  setTimeout(function(){  
+  setTimeout(function(){
     $(that).find('div').css("visibility", "hidden");
     $(that).find('div').removeClass("animated slideOutDown");
   }, 500);
-  
+
 })
