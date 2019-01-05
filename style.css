@@ -239,7 +239,7 @@ nav {
 
 .header {
   height: 65vh;
-  background-image: linear-gradient(to left top, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), rgba(64, 224, 208, 0.8)), url(images/tabbLight.jpg);
+  background-image: linear-gradient(to left top, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), #40e0d0cc), url(images/tabbLight.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -467,7 +467,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   z-index: -1;
-  background-image: linear-gradient(to bottom right, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), rgba(64, 224, 208, 0.8));
+  background-image: linear-gradient(to bottom right, #ff0080cc, hsla(33, 100%, 50%, 0.8), #40e0d0cc);
   height: 20rem;
   margin-top: -39%; }
   footer p {
