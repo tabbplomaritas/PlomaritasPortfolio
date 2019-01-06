@@ -59,6 +59,16 @@ let clickedThumb = clicked[0].id;
 
     break;
 
+    case "grubstake":
+
+      projectHeader = "Grubstake",
+      gitCode = "https://github.com/tabbplomaritas/grubstake",
+      gitPage ="http://www.whatisgrubstake.com",
+      projectText = "whatisgrubstake.com is a responsive, one page website I developed for a community investing workshop series during my web development internship at DO:BETTER. Working closely with the designer and project manager, I utilized jQuery, Git, Babel, and Google Tag Manager in this fun client project.";
+      projectImg = "../images/projectThumbs/grubstake2.jpg"
+
+    break;
+
     case "divvy":
 
       projectHeader = "Divvy",
