@@ -236,7 +236,8 @@ section.currentProjects {
 
     img.expanded {
         margin: 0;
-        width: 80%;
+        width: 90%;
+        max-width: 110rem;
         position: fixed;
         top: 50%;
         right: 50%;

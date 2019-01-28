@@ -204,13 +204,9 @@ $("#portfolio > div > div").on("mouseleave", function(){
 })
 
 $(".currentProjects > img").on("click", function(){
-  console.log(this);
-  $(this).toggleClass("expanded");
-
-  // $(this).on("click", function(){
-  //   console.log(this);
-  //   $(this).removeClass("expanded")
-  // })
+  if ($( window ).width() > 767) {
+     $(this).toggleClass("expanded");
+  }
 })
 
 $(document).keyup(function(e) {
