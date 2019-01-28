@@ -91,8 +91,7 @@
 
 // Tablet & Desktop & Landscape view
 
- @media screen and (min-width: 768px)
- and (orientation: landscape) {
+ @media screen and (min-width: 768px) {
 
     body {
         padding: 3rem;
@@ -252,4 +251,13 @@
     height: auto;
     box-shadow: 0px 0px 20px #000000;
   }
+   section.currentProjects img {
+         width: 30%;
+     }
 }
+
+ @media screen and (min-width: 992px) {
+     section.currentProjects img {
+         width: 35rem;
+     }
+ }

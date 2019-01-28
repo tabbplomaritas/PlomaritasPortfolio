@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113382768-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113382768-2');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--animations library-->
+    <link rel="stylesheet" href="animate.css">
+
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+
+
+    <!--tiny image for window tab -->
+    <link rel="icon" href="images/lily.png">
+    <title>Current Projects | Tabbatha Plomaritas</title>
+</head>
+
+<body>
+    <main id="top">
+        <header class="header">
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">
+                        <span class="first-name">Tabbatha</span>
+                    <span class="last-name">Plomaritas</span>
+                    </span>
+                    <span class="heading-primary--sub">Modern Web Design & Development</span>
+                </h1>
+                <a id="viewPortfolio_btn" href="#portfolio" class="btn2 btn2--white btn2--animated">View Current Projects</a>
+            </div>
+        </header>
+
+        <nav>
+            <div class="nav__links">
+                <a href="index.html" class="btn btn--white btn--animated">Home</a>
+                <a href="#portfolio" class="btn btn--white btn--animated">Portfolio</a>
+                <a href="/docs/Tabbatha_Plomaritas_resume.pdf" target="_blank" class="btn btn--white btn--animated">Resume</a>
+                <a href="contact.html" class="btn btn--white btn--animated" >Contact</a>
+                <!-- <a href="blog.html" class="btn btn--white btn--animated" >Blog</a> -->
+            </div>
+        </nav>
+
+        <section id="mainContent" class="mainContent">
+            <h2 class="mainContent__header">
+                Current Client Projects
+            </h2>
+            <div class="mainContent__text">
+                <p>Below you may view a sample of client projects on which I am currently working. I have taken on a variety of roles in creating these projects including both designer and developer and am excited to continue building web applications that challenge my creativity and technical skills. Please click on a thumbnail to learn more about the project.</p>
+                <p>I'd love to learn about your upcoming web application needs and how I can contribute to your team or project! You can <a href="contact.html">contact me</a>today or visit <a href="http://www.github.com/tabbplomaritas" target="_blank">my Github</a> to see more of my work.</p>
+            </div>
+        </section>
+
+        <!-- pop up project info -->
+        <section class="projectInfo">
+            <div id="closeProjectWindow">
+                <i class="fas fa-window-close fa-3x"></i>
+            </div>
+            <h2 id="projectInfoHeader" class="mainContent__header"></h2>
+            <div class="projectInfoLinks">
+                <a href="" target="_blank" class="projectInfoBtn" id="viewOnGit">View code on GitHub</a>
+                <a href="" class="projectInfoBtn" target="_blank" id="viewOnWeb">View project website</a>
+            </div>
+            <p id="projectDescript"></p>
+
+            <img alt="" id="projectInfoImg1">
+            <img alt="" id="projectInfoImg2">
+            <img alt="" id="projectInfoImg3">
+            <img alt="" id="projectInfoImg4">
+            <img alt="" id="projectInfoImg5">
+            <img alt="" id="projectInfoImg5">
+        </section>
+
+
+        <section class="image-grid currentProjects" id="portfolio">
+          
+            <!-- <div> -->
+                <img id="kapow" class="portfolio_img" src="images/currentprojects/dop1.jpg" alt="Thumbnail of Kapow game">
+                <img id="kapow" class="portfolio_img" src="images/currentprojects/dop2.jpg" alt="Thumbnail of Kapow game">
+                <img id="kapow" class="portfolio_img" src="images/currentprojects/dop3.jpg" alt="Thumbnail of Kapow game">
+                <img id="kapow" class="portfolio_img" src="images/currentprojects/dop4.jpg" alt="Thumbnail of Kapow game">
+                <img id="kapow" class="portfolio_img" src="images/currentprojects/dop5.jpg" alt="Thumbnail of Kapow game">
+                <img id="kapow" class="portfolio_img" src="images/currentprojects/dop6.jpg" alt="Thumbnail of Kapow game">
+            <!-- </div> -->
+
+            
+        </section>
+    </main>
+
+    <footer>
+            <a href="#top" class="btn-to-top">Back to top  <i class="fas fa-arrow-alt-circle-up"></i></a>
+            <p>
+            All images and designs © 2018 Tabbatha Plomaritas
+            </p>
+    </footer>
+
+
+<script src="js/portfolio.js" type="text/javascript"></script>
+</body>
+
+</html>

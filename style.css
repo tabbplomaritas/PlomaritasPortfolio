@@ -239,7 +239,7 @@ nav {
 
 .header {
   height: 65vh;
-  background-image: linear-gradient(to left top, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), #40e0d0cc), url(images/tabbLight.jpg);
+  background-image: linear-gradient(to left top, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), rgba(64, 224, 208, 0.8)), url(images/tabbLight.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -270,7 +270,8 @@ nav {
     font-size: 3rem;
     font-family: beyond;
     color: #ff0080;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    letter-spacing: 2px; }
   .mainContent__text {
     background-color: #fff;
     box-shadow: -5px 10px 19px -5px rgba(176, 173, 176, 0.6);
@@ -383,6 +384,22 @@ nav {
   border-radius: 25px;
   box-shadow: -1px -1px 15px 1px rgba(0, 0, 0, 0.233); }
 
+section.currentProjects {
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  section.currentProjects img {
+    width: 80%;
+    border-radius: 5px;
+    margin: 1rem;
+    box-shadow: 0 0 20px #b0adb0;
+    transition: .25s all ease-in; }
+  section.currentProjects img.expanded {
+    width: 90%;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%); }
+
 .image-grid {
   display: flex;
   flex-flow: column;
@@ -467,7 +484,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   z-index: -1;
-  background-image: linear-gradient(to bottom right, #ff0080cc, hsla(33, 100%, 50%, 0.8), #40e0d0cc);
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 128, 0.8), rgba(255, 140, 0, 0.8), rgba(64, 224, 208, 0.8));
   height: 20rem;
   margin-top: -39%; }
   footer p {
@@ -922,7 +939,7 @@ li {
     flex-direction: row;
     justify-content: center; } }
 
-@media screen and (min-width: 768px) and (orientation: landscape) {
+@media screen and (min-width: 768px) {
   body {
     padding: 3rem;
     margin: 0 auto; }
@@ -1018,4 +1035,10 @@ li {
     transform: translateX(48.5%) translateY(-50%);
     width: 90%;
     height: auto;
-    box-shadow: 0px 0px 20px #000000; } }
+    box-shadow: 0px 0px 20px #000000; }
+  section.currentProjects img {
+    width: 30%; } }
+
+@media screen and (min-width: 992px) {
+  section.currentProjects img {
+    width: 35rem; } }

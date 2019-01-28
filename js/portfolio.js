@@ -36,7 +36,6 @@ let projectImg = "";
 let toolsUsed = "";
 let clickedThumb = clicked[0].id;
 
-
   switch(clickedThumb){
 
     case "kapow":
@@ -203,3 +202,16 @@ $("#portfolio > div > div").on("mouseleave", function(){
   }, 500);
 
 })
+
+$(".currentProjects > img").on("click", function(){
+  console.log(this);
+  $(this).addClass("expanded");
+  // $(this).find('div').addClass("animated slideInUp");
+  // $(this).find('div').css("visibility", "visible");
+})
+
+$(document).keyup(function(e) {
+  console.log(e);
+  
+  if (e.keyCode === 27) $('.expanded').removeClass("expanded");   // esc
+});
