@@ -2,9 +2,10 @@ main {
     display: flex;
     flex-direction: column;
     background-color: $color-light-grey;
-    padding-bottom: 20px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+    padding-bottom: 5rem;
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99.2%);
+    
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99.2%);
     animation-name: fadeIn;
     animation-duration: .3s;
     animation-timing-function: ease-in;
@@ -225,15 +226,17 @@ section.currentProjects {
     justify-content: space-around;
 
     img {
-        width: 80%;
+        width: 100%;
         border-radius: 5px;
         margin: 1rem;
         box-shadow: 0 0 20px rgba(176,173,176,1);
         transition: .25s all ease-in;
+        cursor: pointer;
         } 
 
     img.expanded {
-        width: 90%;
+        margin: 0;
+        width: 80%;
         position: fixed;
         top: 50%;
         right: 50%;

@@ -205,9 +205,12 @@ $("#portfolio > div > div").on("mouseleave", function(){
 
 $(".currentProjects > img").on("click", function(){
   console.log(this);
-  $(this).addClass("expanded");
-  // $(this).find('div').addClass("animated slideInUp");
-  // $(this).find('div').css("visibility", "visible");
+  $(this).toggleClass("expanded");
+
+  // $(this).on("click", function(){
+  //   console.log(this);
+  //   $(this).removeClass("expanded")
+  // })
 })
 
 $(document).keyup(function(e) {
