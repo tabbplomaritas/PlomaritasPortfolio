@@ -430,7 +430,7 @@ section.currentProjects {
   .image-grid div img {
     width: 100%;
     border-radius: 25px;
-    box-shadow: 0 0 20px #b0adb0;
+    box-shadow: 0 0 9px #b0adb07a;
     transition: .25s all ease-in; }
   .image-grid div .toolsUsedContainer {
     width: 100%;
@@ -460,7 +460,7 @@ section.currentProjects {
     padding-bottom: 2.5rem;
     border-radius: 2.5rem;
     background-color: rgba(255, 255, 255, 0.934);
-    transition: .4s all;
+    transition: .25s all;
     visibility: hidden; }
   .image-grid div .tools {
     font-size: 2.2rem;
