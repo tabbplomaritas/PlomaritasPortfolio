@@ -63,6 +63,7 @@ nav {
     margin: 3rem 1rem;
     padding: 10px 10px;
     align-self: center;
+    max-width: 90rem;
     width: 90%;
     animation-name: moveInRight;
     animation-duration: .8s;
@@ -81,16 +82,18 @@ nav {
     }
 
     &__text {
-        background-color: $color-white;
-        box-shadow: -5px 10px 19px -5px rgba(176,173,176,.6);
+        background-color: #fff;
+        box-shadow: -5px 10px 19px -5px rgba(176, 173, 176, 0.15);
         border-radius: 25px;
-        color: $color-grey-dark;
+        color: #363636;
         margin: 1.5rem;
         padding: 1.5rem;
         font-size: 1.5rem;
-        font-weight: 300;
+        line-height: 2.1rem;
+        font-weight: 500;
         align-content: center;
         text-indent: 5rem;
+        letter-spacing: 0.1px;
     }
 
     p:not(:last-child) {

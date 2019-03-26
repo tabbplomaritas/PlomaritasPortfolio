@@ -65,11 +65,9 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.8rem;
-  color: #777;
-  padding: 1rem;
-  max-width: 1270px; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -258,6 +256,7 @@ nav {
   margin: 3rem 1rem;
   padding: 10px 10px;
   align-self: center;
+  max-width: 90rem;
   width: 90%;
   animation-name: moveInRight;
   animation-duration: .8s;
@@ -272,15 +271,17 @@ nav {
     letter-spacing: 2px; }
   .mainContent__text {
     background-color: #fff;
-    box-shadow: -5px 10px 19px -5px rgba(176, 173, 176, 0.6);
+    box-shadow: -5px 10px 19px -5px rgba(176, 173, 176, 0.15);
     border-radius: 25px;
-    color: #777;
+    color: #363636;
     margin: 1.5rem;
     padding: 1.5rem;
     font-size: 1.5rem;
-    font-weight: 300;
+    line-height: 2.1rem;
+    font-weight: 500;
     align-content: center;
-    text-indent: 5rem; }
+    text-indent: 5rem;
+    letter-spacing: 0.1px; }
   .mainContent p:not(:last-child) {
     margin-bottom: 1rem; }
   .mainContent a {
@@ -942,7 +943,6 @@ li {
 
 @media screen and (min-width: 768px) {
   body {
-    padding: 3rem;
     margin: 0 auto; }
   .heading-primary {
     margin-bottom: 60px; }
