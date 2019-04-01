@@ -48,15 +48,15 @@ let clickedThumb = clicked[0].id;
 
     break;
 
-    case "expressFresh":
+    // case "expressFresh":
 
-      projectHeader = "Express Fresh",
-      gitCode = "https://github.com/tabbplomaritas/express-shoppingcart",
-      gitPage ="https://expressfresh.herokuapp.com/",
-      projectText = "Express Fresh is a work-in-progress full-stack application meant to allow users to support local farmers markets while saving time by browsing and shopping for farmer's market items and then paying for and picking them up onsite. It is built with AngularJS, Node.js, Express, and PostgreSQL. This project began as a simple shopping cart to practice the essentials of SQL and PostgreSQL and I'm greatly enjoying building it out further to integrate a sleek and modern UI as well as expanding the data used in the backend.";
-      projectImg = "../images/projectThumbs/expressfresh.jpg"
+    //   projectHeader = "Express Fresh",
+    //   gitCode = "https://github.com/tabbplomaritas/express-shoppingcart",
+    //   gitPage ="https://expressfresh.herokuapp.com/",
+    //   projectText = "Express Fresh is a work-in-progress full-stack application meant to allow users to support local farmers markets while saving time by browsing and shopping for farmer's market items and then paying for and picking them up onsite. It is built with AngularJS, Node.js, Express, and PostgreSQL. This project began as a simple shopping cart to practice the essentials of SQL and PostgreSQL and I'm greatly enjoying building it out further to integrate a sleek and modern UI as well as expanding the data used in the backend.";
+    //   projectImg = "../images/projectThumbs/expressfresh.jpg"
 
-    break;
+    // break;
 
     case "grubstake":
 
@@ -106,14 +106,14 @@ let clickedThumb = clicked[0].id;
       projectImg = "../images/projectThumbs/portfolio.jpg"
     break;
 
-    case "gearshare":
+    // case "gearshare":
 
-      projectHeader = "GearShare";
-      gitCode = "https://github.com/tabbplomaritas/GearShare";
-      gitPage ="https://tabbplomaritas.github.io/GearShare/";
-      projectText = "Gear Share is a fictitious start-up company that I created for practicing and exploring web development tools as I learn them. This application will connect users of audio and photo technical equipment to other users for loaning and renting gear. It currently utilizes SASS and JavaScript but will soon showcase the use of a variety of technologies.";
-      projectImg = "../images/projectThumbs/gearshare.jpg"
-    break;
+    //   projectHeader = "GearShare";
+    //   gitCode = "https://github.com/tabbplomaritas/GearShare";
+    //   gitPage ="https://tabbplomaritas.github.io/GearShare/";
+    //   projectText = "Gear Share is a fictitious start-up company that I created for practicing and exploring web development tools as I learn them. This application will connect users of audio and photo technical equipment to other users for loaning and renting gear. It currently utilizes SASS and JavaScript but will soon showcase the use of a variety of technologies.";
+    //   projectImg = "../images/projectThumbs/gearshare.jpg"
+    // break;
 
     case "addressBook":
 
@@ -133,14 +133,14 @@ let clickedThumb = clicked[0].id;
       projectImg = "../images/projectThumbs/rgb.jpg"
     break;
 
-    case "todo":
+    // case "todo":
 
-      projectHeader = "To-Do List";
-      gitCode = "https://github.com/tabbplomaritas/ToDo-List";
-      gitPage ="https://tabbplomaritas.github.io/ToDo-List/";
-      projectText = "An interactive Todo List app that uses JavaScript and jQuery.";
-      projectImg = "../images/projectThumbs/todo.jpg";
-    break;
+    //   projectHeader = "To-Do List";
+    //   gitCode = "https://github.com/tabbplomaritas/ToDo-List";
+    //   gitPage ="https://tabbplomaritas.github.io/ToDo-List/";
+    //   projectText = "An interactive Todo List app that uses JavaScript and jQuery.";
+    //   projectImg = "../images/projectThumbs/todo.jpg";
+    // break;
 
     case "todo-angular":
 
